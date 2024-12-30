@@ -1,7 +1,7 @@
 ---
 title: "Rnav"
 category: "approach"
-date: "07.02.2022"
+date: "07-02-2022"
 ---
 
 # Ils is a type of nagivatio

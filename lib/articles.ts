@@ -16,7 +16,9 @@ const getSortedArticles = (): ArticleItem[] => {
     const fullPath = path.join(articlesDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf-8");
     const matterResult = matter(fileContents);
-    const date = moment(matterResult.data.date).format("DD-MM-YYYY");
+    const date = moment(matterResult.data.date, "DD-MM-YYYY").format(
+      "DD-MM-YYYY"
+    );
 
     return {
       id,
@@ -55,7 +57,9 @@ export const getArticleData = async (id: string) => {
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
-  const date = moment(matterResult.data.date).format("DD-MM-YYYY");
+  const date = moment(matterResult.data.date, "DD-MM-YYYY").format(
+    "DD-MM-YYYY"
+  );
   return {
     id,
     contentHtml,
