@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "rm -rf .next dist && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-md": "rm -rf .next dist && tsc && node dist/generateMarkdownFiles.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

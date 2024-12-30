@@ -9,15 +9,20 @@ const HomePage = () => {
       <header className="font-cormorantGaramond font-light text-6xl text-neutral-900 text-center">
         <h1>Virtual Aviator Hub</h1>
       </header>
-      <section className="md:grid md:grid-cols-2 flex flex-col gap-10">
-        {articles !== null &&
-          Object.keys(articles).map((article) => (
-            <ArticleItemList
-              category={article}
-              articles={articles[article]}
-              key={article}
-            />
-          ))}
+      <p className="article">
+        Types of Engines (Piston, Turboprop, Jet) Fuel Mixture and Carburetor
+        Heat Propeller Systems
+      </p>
+      <section>maybe a big search box</section>
+
+      <section>
+        <h2>Latest additions</h2>
+        <section className="md:grid md:grid-cols-2 flex flex-col gap-10">
+          {articles !== null &&
+            Object.keys(articles).map((article) => (
+              <ArticleItemList articles={articles[article]} key={article} />
+            ))}
+        </section>
       </section>
     </section>
   );
