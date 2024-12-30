@@ -8,9 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        cormorantGaramond: ["var(--font-cormorant-garamond)", "serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
       },
     },
   },
