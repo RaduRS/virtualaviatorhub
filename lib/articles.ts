@@ -64,6 +64,7 @@ export const getArticleData = async (id: string) => {
     id,
     contentHtml,
     title: matterResult.data.title,
+    chapter: matterResult.data.chapter,
     date,
   };
 };

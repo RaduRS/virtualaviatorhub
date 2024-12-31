@@ -13,7 +13,7 @@ const Article = async ({ params }: { params: { slug: string } }) => {
           <ArrowLeftIcon width={20} />
           <p>back to home</p>
         </Link>
-        <p>{articleData.date.toString()}</p>
+        <p>{articleData.chapter}</p>
       </div>
       <article
         className="article"
