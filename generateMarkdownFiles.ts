@@ -19,11 +19,13 @@ const generateMarkdownFiles = () => {
       return;
     }
 
+    const currentDate = new Date().toISOString().split("T")[0];
+
     // Create the Markdown file with frontmatter
     const content = `---
 title: "${metadata.title}"
-category: "${metadata.category}"
-date: "${metadata.date}"
+chapter: "${metadata.chapter}"
+date: "${currentDate}"
 ---
 
 # ${metadata.title}

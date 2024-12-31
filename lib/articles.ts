@@ -23,7 +23,7 @@ const getSortedArticles = (): ArticleItem[] => {
     return {
       id,
       title: matterResult.data.title,
-      category: matterResult.data.category,
+      chapter: matterResult.data.chapter,
       date,
     };
   });
@@ -40,10 +40,10 @@ export const getCategorisedArticles = (): Record<string, ArticleItem[]> => {
   const articles = getSortedArticles();
   const categorizedArticles: Record<string, ArticleItem[]> = {};
   articles.forEach((article) => {
-    if (categorizedArticles[article.category]) {
-      categorizedArticles[article.category].push(article);
+    if (categorizedArticles[article.chapter]) {
+      categorizedArticles[article.chapter].push(article);
     } else {
-      categorizedArticles[article.category] = [article];
+      categorizedArticles[article.chapter] = [article];
     }
   });
   return categorizedArticles;

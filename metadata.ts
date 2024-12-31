@@ -1,28 +1,30 @@
 export const articlesMetadata = {
-  ilss: {
-    title: "ILSs",
-    category: "articles",
-    date: "02-02-2021",
-  },
-  rnave: {
-    title: "RNAVe",
-    category: "approach",
-    date: "07-02-2022",
-  },
-  gps: {
-    title: "GPS",
-    category: "navigation",
-    date: "10-10-2023",
-  },
   "what-is-aviation": {
     title: "What is Aviation?",
-    category: "aviation",
-    date: "01-01-2024",
+    chapter: "1.1",
+  },
+  "history-of-aviation": {
+    title: "History of Aviation",
+    chapter: "1.1",
+  },
+  "types-of-aviation": {
+    title: "Types of Aviation",
+    chapter: "1.1",
   },
   "flight-simulation-basics": {
     title: "Flight Simulation Basics",
-    category: "simulation",
-    date: "01-02-2024",
+    chapter: "1.2",
   },
-  // Add new objects here to create new Markdown files automatically
+  "overview-of-flight-simulators": {
+    title: "Overview of Flight Simulators",
+    chapter: "1.2",
+  },
+  "benefits-of-simulation": {
+    title: "Benefits of Learning Through Simulation",
+    chapter: "1.2",
+  },
+  "choosing-your-first-simulator": {
+    title: "Choosing Your First Simulator",
+    chapter: "1.2",
+  },
 };

@@ -1,6 +1,6 @@
 export type ArticleItem = {
   id: string;
   title: string;
-  category: string;
+  chapter: string;
   date: string;
 };

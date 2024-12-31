@@ -1,9 +1,7 @@
 ---
 title: "History of Aviation"
-category: "articles"
-date: "02-02-2021"
+chapter: "1.1"
+date: "2024-12-31"
 ---
 
-# Ils is a type of nagivation
-
-![Art](/test.jpeg)
+# History of Aviation

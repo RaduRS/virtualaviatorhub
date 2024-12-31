@@ -1,7 +1,7 @@
 ---
 title: "Flight Simulation Basics"
-category: "simulation"
-date: "01-02-2024"
+chapter: "1.2"
+date: "2024-12-31"
 ---
 
 # Flight Simulation Basics
