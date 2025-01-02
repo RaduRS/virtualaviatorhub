@@ -7,10 +7,17 @@ import {
   SidebarGroupContent,
   SidebarGroupLabel,
 } from "@/components/ui/sidebar";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { ChevronDown } from "lucide-react";
 import { articlesMetadata } from "@/metadata";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState, useMemo } from "react";
 
-// Define a type that includes the dynamically added `path` property
 type ArticleWithPath = {
   title: string;
   chapter: string;
@@ -19,19 +26,43 @@ type ArticleWithPath = {
 };
 
 export function AppSidebar() {
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname();
+
+  // State to track expanded/collapsed state of each chapter
+  const [expandedChapters, setExpandedChapters] = useState<
+    Record<string, boolean>
+  >({});
+
+  // Initialize state from localStorage
+  useEffect(() => {
+    const savedState = localStorage.getItem("expandedChapters");
+    if (savedState) {
+      setExpandedChapters(JSON.parse(savedState));
+    }
+  }, []);
+
+  // Save state to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("expandedChapters", JSON.stringify(expandedChapters));
+  }, [expandedChapters]);
 
   // Group articles by chapter
-  const groupedArticles = Object.entries(articlesMetadata).reduce(
-    (acc, [key, article]) => {
+  const groupedArticles = useMemo(() => {
+    return Object.entries(articlesMetadata).reduce((acc, [key, article]) => {
       if (!acc[article.chapter]) {
         acc[article.chapter] = [];
       }
       acc[article.chapter].push({ ...article, path: key } as ArticleWithPath);
       return acc;
-    },
-    {} as Record<string, ArticleWithPath[]>
-  );
+    }, {} as Record<string, ArticleWithPath[]>);
+  }, []);
+
+  const toggleChapter = (chapter: string, open?: boolean) => {
+    setExpandedChapters((prev) => ({
+      ...prev,
+      [chapter]: open !== undefined ? open : !prev[chapter], // Use `open` if provided
+    }));
+  };
 
   return (
     <Sidebar>
@@ -40,55 +71,72 @@ export function AppSidebar() {
           const mainChapter = articles.find(
             (article) => article.title === chapter
           );
+          const isExpanded = expandedChapters[chapter] || false;
 
           return (
-            <SidebarGroup key={chapter} className="h-auto">
-              {/* Main chapter link */}
-              {mainChapter && (
-                <SidebarGroupLabel className="h-auto px-0">
-                  <a
-                    href={mainChapter.isLive ? `/${mainChapter.path}` : "#"}
-                    className={`text-base p-2 w-full ${
-                      mainChapter.isLive
-                        ? "text-gray-800 font-bold hover:underline"
-                        : "text-gray-400 cursor-not-allowed"
-                    } ${
-                      pathname === `/${mainChapter.path}` && mainChapter.isLive
-                        ? "bg-gray-200 rounded-md"
-                        : ""
-                    }`}
-                  >
-                    {index + 1}. {chapter}
-                  </a>
+            <Collapsible
+              key={chapter}
+              className="group/collapsible"
+              open={isExpanded} // Set initial state from `expandedChapters`
+              onOpenChange={(open) => toggleChapter(chapter, open)} // Pass `open` to set state explicitly
+            >
+              <SidebarGroup>
+                <SidebarGroupLabel asChild>
+                  <CollapsibleTrigger className="flex items-center w-full">
+                    {mainChapter ? (
+                      <Link
+                        href={mainChapter.isLive ? `/${mainChapter.path}` : "#"}
+                        className={`text-base p-2 ${
+                          mainChapter.isLive
+                            ? "text-gray-800 font-bold hover:underline"
+                            : "text-gray-400 cursor-not-allowed"
+                        } ${
+                          pathname === `/${mainChapter.path}` &&
+                          mainChapter.isLive
+                            ? "bg-gray-200 rounded-md"
+                            : ""
+                        }`}
+                      >
+                        {index + 1}. {chapter}
+                      </Link>
+                    ) : (
+                      <span className="text-gray-400">
+                        {index + 1}. {chapter}
+                      </span>
+                    )}
+                    <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                  </CollapsibleTrigger>
                 </SidebarGroupLabel>
-              )}
 
-              {/* Subtopics */}
-              <SidebarGroupContent>
-                <ul>
-                  {articles
-                    .filter((article) => article.title !== chapter)
-                    .map((article) => (
-                      <li key={article.path} className="py-1 pl-4">
-                        <a
-                          href={article.isLive ? `/${article.path}` : "#"}
-                          className={`block rounded-md px-2 py-1 ${
-                            article.isLive
-                              ? "hover:bg-gray-200 text-gray-800"
-                              : "text-gray-400 cursor-not-allowed"
-                          } ${
-                            pathname === `/${article.path}` && article.isLive
-                              ? "bg-gray-200 font-semibold"
-                              : ""
-                          }`}
-                        >
-                          {article.title}
-                        </a>
-                      </li>
-                    ))}
-                </ul>
-              </SidebarGroupContent>
-            </SidebarGroup>
+                <CollapsibleContent>
+                  <SidebarGroupContent>
+                    <ul>
+                      {articles
+                        .filter((article) => article.title !== chapter)
+                        .map((article) => (
+                          <li key={article.path} className="py-1 pl-4">
+                            <Link
+                              href={article.isLive ? `/${article.path}` : "#"}
+                              className={`block rounded-md px-2 py-1 ${
+                                article.isLive
+                                  ? "hover:bg-gray-200 text-gray-800"
+                                  : "text-gray-400 cursor-not-allowed"
+                              } ${
+                                pathname === `/${article.path}` &&
+                                article.isLive
+                                  ? "bg-gray-200 font-semibold"
+                                  : ""
+                              }`}
+                            >
+                              {article.title}
+                            </Link>
+                          </li>
+                        ))}
+                    </ul>
+                  </SidebarGroupContent>
+                </CollapsibleContent>
+              </SidebarGroup>
+            </Collapsible>
           );
         })}
       </SidebarContent>
