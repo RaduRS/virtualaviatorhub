@@ -1,30 +1,30 @@
 export const articlesMetadata = {
   "what-is-aviation": {
     title: "What is Aviation?",
-    chapter: "1.1",
+    chapter: "What is Aviation?",
   },
   "history-of-aviation": {
     title: "History of Aviation",
-    chapter: "1.1",
+    chapter: "What is Aviation?",
   },
   "types-of-aviation": {
-    title: "Types of Aviation",
-    chapter: "1.1",
+    title: "Types of Aviation (General, Commercial, Military)",
+    chapter: "What is Aviation?",
   },
   "flight-simulation-basics": {
     title: "Flight Simulation Basics",
-    chapter: "1.2",
+    chapter: "Flight Simulation Basics",
   },
   "overview-of-flight-simulators": {
     title: "Overview of Flight Simulators",
-    chapter: "1.2",
+    chapter: "Flight Simulation Basics",
   },
   "benefits-of-simulation": {
     title: "Benefits of Learning Through Simulation",
-    chapter: "1.2",
+    chapter: "Flight Simulation Basics",
   },
   "choosing-your-first-simulator": {
-    title: "Choosing Your First Simulator",
-    chapter: "1.2",
+    title: "Choosing Your First Simulator (MSFS, X-Plane, etc.)",
+    chapter: "Flight Simulation Basics",
   },
 };

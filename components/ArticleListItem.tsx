@@ -16,7 +16,7 @@ const ArticleItemList = ({ articles }: Props) => {
             className="text-neutral-900 hover:text-amber-700 transition duration-150"
           >
             {article.title}
-            <h2 className="font-poppins text-lg">{article.chapter}</h2>
+            <h2 className="text-lg">{article.chapter}</h2>
           </Link>
         ))}
       </div>

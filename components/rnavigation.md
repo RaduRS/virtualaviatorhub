@@ -6,6 +6,7 @@ date: "07-02-2022"
 
 # Ils is a type of nagivatio
 
+![Art](/test.jpeg)
 Types of Engines (Piston, Turboprop, Jet)
 Fuel Mixture and Carburetor Heat
 Propeller Systems

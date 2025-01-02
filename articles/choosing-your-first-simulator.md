@@ -1,7 +1,7 @@
 ---
-title: "Choosing Your First Simulator"
-chapter: "1.2"
-date: "2024-12-31"
+title: "Choosing Your First Simulator (MSFS, X-Plane, etc.)"
+chapter: "Flight Simulation Basics"
+date: "2025-01-02"
 ---
 
-# Choosing Your First Simulator
+# Choosing Your First Simulator (MSFS, X-Plane, etc.)

@@ -1,7 +1,7 @@
 ---
 title: "Benefits of Learning Through Simulation"
-chapter: "1.2"
-date: "2024-12-31"
+chapter: "Flight Simulation Basics"
+date: "2025-01-02"
 ---
 
 # Benefits of Learning Through Simulation

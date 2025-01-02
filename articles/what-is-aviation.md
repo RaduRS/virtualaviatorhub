@@ -1,7 +1,7 @@
 ---
 title: "What is Aviation?"
-chapter: "1.1"
-date: "2024-12-31"
+chapter: "What is Aviation?"
+date: "2025-01-02"
 ---
 
 # What is Aviation?
@@ -15,3 +15,4 @@ The history of aviation dates back to humanity’s earliest dreams of flight, wi
 ### [Types of Aviation](./types-of-aviation)
 
 Aviation can be divided into three main types: general, commercial, and military. General aviation encompasses private flying, recreational use, and small-scale business operations. Commercial aviation involves airlines and cargo transport, serving millions of passengers and businesses annually. Military aviation focuses on defense, reconnaissance, and strategic missions. These types collectively form the aviation ecosystem, supporting diverse needs from leisure and business to national security.
+
