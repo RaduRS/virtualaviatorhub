@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
 import { articlesMetadata } from "./metadata";
 
 const articlesDirectory = path.join(process.cwd(), "articles");
@@ -13,26 +14,36 @@ const generateMarkdownFiles = () => {
   Object.entries(articlesMetadata).forEach(([key, metadata]) => {
     const filePath = path.join(articlesDirectory, `${key}.md`);
 
-    // Skip if the file already exists
     if (fs.existsSync(filePath)) {
-      console.log(`File "${filePath}" already exists. Skipping.`);
-      return;
-    }
+      // Read existing file
+      const fileContents = fs.readFileSync(filePath, "utf-8");
+      const { content, data } = matter(fileContents);
 
-    const currentDate = new Date().toISOString().split("T")[0];
+      // Update only the isLive field
+      const updatedData = {
+        ...data,
+        isLive: metadata.isLive,
+      };
 
-    // Create the Markdown file with frontmatter
-    const content = `---
+      // Recreate the file with updated frontmatter and original content
+      const updatedContent = matter.stringify(content, updatedData);
+      fs.writeFileSync(filePath, updatedContent, "utf-8");
+      console.log(`File "${filePath}" updated successfully.`);
+    } else {
+      // Create a new file if it doesn't exist
+      const currentDate = new Date().toISOString().split("T")[0];
+      const newContent = `---
 title: "${metadata.title}"
 chapter: "${metadata.chapter}"
+isLive: ${metadata.isLive}
 date: "${currentDate}"
 ---
 
 # ${metadata.title}
 `;
-
-    fs.writeFileSync(filePath, content, "utf-8");
-    console.log(`File "${filePath}" created successfully.`);
+      fs.writeFileSync(filePath, newContent, "utf-8");
+      console.log(`File "${filePath}" created successfully.`);
+    }
   });
 };
 

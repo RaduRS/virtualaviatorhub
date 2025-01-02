@@ -1,7 +1,8 @@
 ---
-title: "What is Aviation?"
-chapter: "What is Aviation?"
-date: "2025-01-02"
+title: What is Aviation?
+chapter: What is Aviation?
+isLive: true
+date: '2025-01-02'
 ---
 
 # What is Aviation?

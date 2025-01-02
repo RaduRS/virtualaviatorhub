@@ -8,13 +8,14 @@ import {
   SidebarGroupLabel,
 } from "@/components/ui/sidebar";
 import { articlesMetadata } from "@/metadata";
-import { usePathname } from "next/navigation"; // Use next/navigation instead
+import { usePathname } from "next/navigation";
 
 // Define a type that includes the dynamically added `path` property
 type ArticleWithPath = {
   title: string;
   chapter: string;
   path: string;
+  isLive: boolean;
 };
 
 export function AppSidebar() {
@@ -46,9 +47,13 @@ export function AppSidebar() {
               {mainChapter && (
                 <SidebarGroupLabel className="h-auto px-0">
                   <a
-                    href={`/${mainChapter.path}`}
-                    className={`text-gray-800 font-bold hover:underline text-base p-2 w-full ${
-                      pathname === `/${mainChapter.path}`
+                    href={mainChapter.isLive ? `/${mainChapter.path}` : "#"}
+                    className={`text-base p-2 w-full ${
+                      mainChapter.isLive
+                        ? "text-gray-800 font-bold hover:underline"
+                        : "text-gray-400 cursor-not-allowed"
+                    } ${
+                      pathname === `/${mainChapter.path}` && mainChapter.isLive
                         ? "bg-gray-200 rounded-md"
                         : ""
                     }`}
@@ -64,13 +69,17 @@ export function AppSidebar() {
                   {articles
                     .filter((article) => article.title !== chapter)
                     .map((article) => (
-                      <li key={article.path} className="py-1">
+                      <li key={article.path} className="py-1 pl-4">
                         <a
-                          href={`/${article.path}`}
-                          className={`block rounded-md pl-6 pr-2 py-1 hover:bg-gray-200 hover:text-gray-800 ${
-                            pathname === `/${article.path}`
-                              ? "bg-gray-200 font-bold"
-                              : "text-gray-600"
+                          href={article.isLive ? `/${article.path}` : "#"}
+                          className={`block rounded-md px-2 py-1 ${
+                            article.isLive
+                              ? "hover:bg-gray-200 text-gray-800"
+                              : "text-gray-400 cursor-not-allowed"
+                          } ${
+                            pathname === `/${article.path}` && article.isLive
+                              ? "bg-gray-200 font-semibold"
+                              : ""
                           }`}
                         >
                           {article.title}
