@@ -3,6 +3,11 @@ title: What is Aviation?
 chapter: What is Aviation?
 isLive: true
 date: '2025-01-02'
+resources:
+  - type: video
+    url: 'https://www.youtube.com/watch?v=example'
+  - type: article
+    url: 'https://www.example.com/aviation'
 ---
 
 # What is Aviation?
@@ -17,3 +22,5 @@ The history of aviation dates back to humanity’s earliest dreams of flight, wi
 
 Aviation can be divided into three main types: general, commercial, and military. General aviation encompasses private flying, recreational use, and small-scale business operations. Commercial aviation involves airlines and cargo transport, serving millions of passengers and businesses annually. Military aviation focuses on defense, reconnaissance, and strategic missions. These types collectively form the aviation ecosystem, supporting diverse needs from leisure and business to national security.
 
+
+Aviation can be divided into three main types: general, commercial, and military. General aviation encompasses private flying, recreational use, and small-scale business operations. Commercial aviation involves airlines and cargo transport, serving millions of passengers and businesses annually. Military aviation focuses on defense, reconnaissance, and strategic missions. These types collectively form the aviation ecosystem, supporting diverse needs from leisure and business to national security.

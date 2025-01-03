@@ -86,7 +86,7 @@ export function AppSidebar() {
                     {mainChapter ? (
                       <Link
                         href={mainChapter.isLive ? `/${mainChapter.path}` : "#"}
-                        className={`text-base p-2 ${
+                        className={`text-base p-2 w-full text-left ${
                           mainChapter.isLive
                             ? "text-gray-800 font-bold hover:underline"
                             : "text-gray-400 cursor-not-allowed"
@@ -104,7 +104,7 @@ export function AppSidebar() {
                         {index + 1}. {chapter}
                       </span>
                     )}
-                    <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                    <ChevronDown className="ml-2 transition-transform group-data-[state=open]/collapsible:rotate-180" />
                   </CollapsibleTrigger>
                 </SidebarGroupLabel>
 

@@ -25,6 +25,7 @@ const getSortedArticles = (): ArticleItem[] => {
       title: matterResult.data.title,
       chapter: matterResult.data.chapter,
       isLive: matterResult.data.isLive || false,
+      resources: matterResult.data.resources || [],
       date,
     };
   });
@@ -67,6 +68,7 @@ export const getArticleData = async (id: string) => {
     title: matterResult.data.title,
     chapter: matterResult.data.chapter,
     isLive: matterResult.data.isLive || false,
+    resources: matterResult.data.resources || [],
     date,
   };
 };

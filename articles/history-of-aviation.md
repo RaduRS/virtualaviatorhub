@@ -1,8 +1,17 @@
 ---
 title: History of Aviation
 chapter: What is Aviation?
-isLive: false
+isLive: true
 date: '2025-01-02'
+resources:
+  - type: video
+    url: 'https://www.youtube.com/watch?v=example'
+  - type: video
+    url: 'https://www.youtube.com/watch?v=example'
+  - type: article
+    url: 'https://www.example.com/aviation'
+  - type: article
+    url: 'https://www.example.com/aviation'
 ---
 
 # History of Aviation

@@ -23,6 +23,7 @@ const generateMarkdownFiles = () => {
       const updatedData = {
         ...data,
         isLive: metadata.isLive,
+        resources: metadata.resources || [],
       };
 
       // Recreate the file with updated frontmatter and original content
@@ -36,6 +37,16 @@ const generateMarkdownFiles = () => {
 title: "${metadata.title}"
 chapter: "${metadata.chapter}"
 isLive: ${metadata.isLive}
+resources:
+${
+  metadata.resources
+    ? metadata.resources
+        .map(
+          (resource) => `  - type: ${resource.type}\n    url: ${resource.url}`
+        )
+        .join("\n")
+    : ""
+}
 date: "${currentDate}"
 ---
 
