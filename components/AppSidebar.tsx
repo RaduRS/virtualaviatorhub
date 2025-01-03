@@ -138,7 +138,9 @@ export function AppSidebar() {
                     ) : (
                       <span className="text-gray-400">{chapter}</span>
                     )}
-                    <ChevronDown className="ml-2 transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                    {articles.length > 1 && (
+                      <ChevronDown className="ml-2 transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                    )}
                   </CollapsibleTrigger>
                 </SidebarGroupLabel>
 
