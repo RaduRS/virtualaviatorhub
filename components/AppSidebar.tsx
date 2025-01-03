@@ -123,7 +123,7 @@ export function AppSidebar() {
                 {currentMainChapter &&
                   currentMainChapter !== previousMainChapter && (
                     <div>
-                      <hr className="my-2 border-gray-300" />
+                      {index !== 0 && <hr className="my-2 border-gray-300" />}
                       <h2 className="text-base ml-4 font-bold text-gray-800 my-2">
                         {currentMainChapter}
                       </h2>
