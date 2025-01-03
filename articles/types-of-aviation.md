@@ -1,8 +1,8 @@
 ---
 title: 'Types of Aviation (General, Commercial, Military)'
 mainChapter: Introduction to Aviation
-chapter: What is Aviation?
-isLive: false
+chapter: 1.1 What is Aviation?
+isLive: true
 resources:
   - type: video
     url: 'https://www.youtube.com/watch?v=example'

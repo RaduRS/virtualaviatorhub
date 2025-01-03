@@ -13,7 +13,6 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { ChevronDown } from "lucide-react";
-import { articlesMetadata } from "@/metadata";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useMemo } from "react";
@@ -29,34 +28,67 @@ type ArticleWithPath = {
 export function AppSidebar() {
   const pathname = usePathname();
 
-  // State to track expanded/collapsed state of each chapter
+  const [groupedArticles, setGroupedArticles] = useState<
+    Record<string, ArticleWithPath[]>
+  >({});
   const [expandedChapters, setExpandedChapters] = useState<
     Record<string, boolean>
-  >({});
-
-  // Initialize state from localStorage
-  useEffect(() => {
-    const savedState = localStorage.getItem("expandedChapters");
-    if (savedState) {
-      setExpandedChapters(JSON.parse(savedState));
+  >(() => {
+    // Initialize from localStorage
+    if (typeof window !== "undefined") {
+      const savedState = localStorage.getItem("expandedChapters");
+      return savedState ? JSON.parse(savedState) : {};
     }
+    return {};
+  });
+  const [fetchError, setFetchError] = useState(false);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const response = await fetch("/api/articles");
+        const data: Record<string, ArticleWithPath[]> = await response.json();
+
+        // Sort the chapters numerically by their keys
+        const sortedData = Object.entries(data).sort(([keyA], [keyB]) => {
+          const parseKey = (key: string) =>
+            key.match(/^\d+(\.\d+)?/)
+              ? parseFloat(key.match(/^\d+(\.\d+)?/)![0])
+              : Number.MAX_SAFE_INTEGER;
+
+          return parseKey(keyA) - parseKey(keyB);
+        });
+
+        setGroupedArticles(Object.fromEntries(sortedData));
+      } catch (error) {
+        console.error("Failed to fetch articles:", error);
+        setFetchError(true); // Set error state
+      }
+    };
+
+    fetchArticles();
   }, []);
+
+  const sortedGroupedArticles = useMemo(() => {
+    return Object.entries(groupedArticles)
+      .sort(([keyA], [keyB]) => {
+        const parseKey = (key: string) =>
+          key.match(/^\d+(\.\d+)?/)
+            ? parseFloat(key.match(/^\d+(\.\d+)?/)![0])
+            : Number.MAX_SAFE_INTEGER;
+
+        return parseKey(keyA) - parseKey(keyB);
+      })
+      .reduce((acc, [key, value]) => {
+        acc[key] = value;
+        return acc;
+      }, {} as Record<string, ArticleWithPath[]>);
+  }, [groupedArticles]);
 
   // Save state to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem("expandedChapters", JSON.stringify(expandedChapters));
   }, [expandedChapters]);
-
-  // Group articles by chapter
-  const groupedArticles = useMemo(() => {
-    return Object.entries(articlesMetadata).reduce((acc, [key, article]) => {
-      if (!acc[article.chapter]) {
-        acc[article.chapter] = [];
-      }
-      acc[article.chapter].push({ ...article, path: key } as ArticleWithPath);
-      return acc;
-    }, {} as Record<string, ArticleWithPath[]>);
-  }, []);
 
   const toggleChapter = (chapter: string, open?: boolean) => {
     setExpandedChapters((prev) => ({
@@ -65,10 +97,13 @@ export function AppSidebar() {
     }));
   };
 
+  if (fetchError) {
+    return <div>Error fetching articles. Please try again later.</div>;
+  }
   return (
     <Sidebar>
       <SidebarContent>
-        {Object.entries(groupedArticles).map(([chapter, articles]) => {
+        {Object.entries(sortedGroupedArticles).map(([chapter, articles]) => {
           const mainChapter = articles.find(
             (article) => article.title === chapter
           );
@@ -112,8 +147,11 @@ export function AppSidebar() {
                     <ul>
                       {articles
                         .filter((article) => article.title !== chapter)
-                        .map((article) => (
-                          <li key={article.path} className="py-1 pl-2">
+                        .map((article, index) => (
+                          <li
+                            key={`${article.path}-${index}`}
+                            className="py-1 pl-2"
+                          >
                             <Link
                               href={article.isLive ? `/${article.path}` : "#"}
                               className={`block rounded-md px-2 py-1 ${

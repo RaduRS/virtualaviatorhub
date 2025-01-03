@@ -1,7 +1,7 @@
 ---
 title: 1.1 What is Aviation?
 mainChapter: Introduction to Aviation
-chapter: What is Aviation?
+chapter: 1.1 What is Aviation?
 isLive: true
 resources:
   - type: video
@@ -10,7 +10,6 @@ resources:
     url: 'https://www.example.com/aviation'
 date: '2025-01-03'
 ---
-
 # What is Aviation?
 
 Aviation is the field encompassing the design, development, production, operation, and use of aircraft. From its origins with the Wright brothers' first powered flight in 1903, aviation has grown into a global industry connecting people and goods across continents. It serves as a vital mode of transportation, enabling economic growth and cultural exchange. Aviation also includes private, commercial, and military branches, each contributing uniquely to the world’s connectivity and progress.

@@ -2,7 +2,7 @@
 title: Understanding Pitot-Static Systems
 mainChapter: 'Basics II: Core Skills'
 chapter: 3.2 Aircraft Instruments
-isLive: false
+isLive: true
 resources:
   - type: article
     url: 'https://www.example.com/pitot-static-systems'

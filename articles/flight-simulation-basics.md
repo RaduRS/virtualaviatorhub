@@ -1,7 +1,7 @@
 ---
-title: Flight Simulation Basics
+title: 1.2 Flight Simulation Basics
 mainChapter: Introduction to Aviation
-chapter: Flight Simulation Basics
+chapter: 1.2 Flight Simulation Basics
 isLive: false
 resources:
   - type: video
@@ -11,4 +11,4 @@ resources:
 date: '2025-01-03'
 ---
 
-# Flight Simulation Basics
+# 1.2 Flight Simulation Basics

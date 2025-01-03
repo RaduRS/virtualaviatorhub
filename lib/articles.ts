@@ -53,7 +53,10 @@ export const getCategorisedArticles = (): Record<string, ArticleItem[]> => {
 };
 
 export const getArticleData = async (id: string) => {
-  const fullPath = path.join(articlesDirectory, `${id}.md`);
+  const fullPath = path.join(articlesDirectory, `${id}.md`); // Ensure id is valid
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`File not found: ${fullPath}`);
+  }
   const fileContents = fs.readFileSync(fullPath, "utf-8");
   const matterResult = matter(fileContents);
   const processedContent = await remark()
@@ -73,4 +76,36 @@ export const getArticleData = async (id: string) => {
     resources: matterResult.data.resources || [],
     date,
   };
+};
+
+export const getAllArticlesMetadata = async () => {
+  const fileNames = fs.readdirSync(articlesDirectory);
+
+  // Fetch all article metadata
+  const allArticlesData = fileNames.map((fileName) => {
+    const id = fileName.replace(/\.md$/, "");
+    const fullPath = path.join(articlesDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf-8");
+    const matterResult = matter(fileContents);
+
+    return {
+      id,
+      path: id,
+      title: matterResult.data.title,
+      mainChapter: matterResult.data.mainChapter,
+      chapter: matterResult.data.chapter,
+      isLive: matterResult.data.isLive || false,
+      resources: matterResult.data.resources || [],
+      date: moment(matterResult.data.date, "DD-MM-YYYY").format("DD-MM-YYYY"),
+    };
+  });
+
+  // Group by chapter for easier sidebar rendering
+  return allArticlesData.reduce((acc, article) => {
+    if (!acc[article.chapter]) {
+      acc[article.chapter] = [];
+    }
+    acc[article.chapter].push(article);
+    return acc;
+  }, {} as Record<string, ArticleItem[]>);
 };

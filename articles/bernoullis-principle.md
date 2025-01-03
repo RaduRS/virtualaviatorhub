@@ -2,7 +2,7 @@
 title: Bernoulli’s Principle
 mainChapter: 'Basics II: Core Skills'
 chapter: 3.1 Principles of Flight
-isLive: false
+isLive: true
 resources:
   - type: video
     url: 'https://www.youtube.com/watch?v=example-bernoulli'

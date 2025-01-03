@@ -1,7 +1,7 @@
 ---
 title: Benefits of Learning Through Simulation
 mainChapter: Introduction to Aviation
-chapter: Flight Simulation Basics
+chapter: 1.2 Flight Simulation Basics
 isLive: false
 resources:
   - type: video

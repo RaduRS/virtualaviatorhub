@@ -1,7 +1,7 @@
 ---
 title: History of Aviation
 mainChapter: Introduction to Aviation
-chapter: What is Aviation?
+chapter: 1.1 What is Aviation?
 isLive: true
 resources:
   - type: video

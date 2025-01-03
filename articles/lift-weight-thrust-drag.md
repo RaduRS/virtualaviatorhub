@@ -2,7 +2,7 @@
 title: 'Lift, Weight, Thrust, and Drag'
 mainChapter: 'Basics II: Core Skills'
 chapter: 3.1 Principles of Flight
-isLive: false
+isLive: true
 resources:
   - type: article
     url: 'https://www.example.com/lift-weight-thrust-drag'

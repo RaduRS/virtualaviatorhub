@@ -1,8 +1,8 @@
 ---
 title: 'Choosing Your First Simulator (MSFS, X-Plane, etc.)'
 mainChapter: Introduction to Aviation
-chapter: Flight Simulation Basics
-isLive: true
+chapter: 1.2 Flight Simulation Basics
+isLive: false
 resources:
   - type: video
     url: 'https://www.youtube.com/watch?v=example'

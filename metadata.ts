@@ -30,7 +30,7 @@ export const articlesMetadata: Record<
     title: "Types of Aviation (General, Commercial, Military)",
     chapter: "1.1 What is Aviation?",
     mainChapter: "Introduction to Aviation",
-    isLive: false,
+    isLive: true,
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "article", url: "https://www.example.com/aviation" },
@@ -50,7 +50,7 @@ export const articlesMetadata: Record<
     title: "Overview of Flight Simulators",
     chapter: "1.2 Flight Simulation Basics",
     mainChapter: "Introduction to Aviation",
-    isLive: true,
+    isLive: false,
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "article", url: "https://www.example.com/aviation" },
@@ -70,7 +70,7 @@ export const articlesMetadata: Record<
     title: "Choosing Your First Simulator (MSFS, X-Plane, etc.)",
     chapter: "1.2 Flight Simulation Basics",
     mainChapter: "Introduction to Aviation",
-    isLive: true,
+    isLive: false,
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
@@ -299,7 +299,7 @@ export const articlesMetadata: Record<
     title: "3.1 Principles of Flight",
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       {
         type: "video",
@@ -312,7 +312,7 @@ export const articlesMetadata: Record<
     title: "Lift, Weight, Thrust, and Drag",
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       {
         type: "article",
@@ -324,7 +324,7 @@ export const articlesMetadata: Record<
     title: "Bernoulli’s Principle",
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       {
         type: "video",
@@ -336,7 +336,7 @@ export const articlesMetadata: Record<
     title: "Stability and Control",
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       { type: "article", url: "https://www.example.com/stability-and-control" },
     ],
@@ -345,7 +345,7 @@ export const articlesMetadata: Record<
     title: "Basic Maneuvers (Turns, Climbs, Descents)",
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       {
         type: "video",
@@ -357,7 +357,7 @@ export const articlesMetadata: Record<
     title: "3.2 Aircraft Instruments",
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       { type: "article", url: "https://www.example.com/aircraft-instruments" },
     ],
@@ -367,7 +367,7 @@ export const articlesMetadata: Record<
       "The 6-Pack (Airspeed, Attitude, Altimeter, VSI, Heading, Turn Coordinator)",
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-6-pack" },
     ],
@@ -376,7 +376,7 @@ export const articlesMetadata: Record<
     title: "Understanding Pitot-Static Systems",
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       { type: "article", url: "https://www.example.com/pitot-static-systems" },
     ],
@@ -385,7 +385,7 @@ export const articlesMetadata: Record<
     title: "Gyroscopic Instruments",
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
-    isLive: false,
+    isLive: true,
     resources: [
       {
         type: "video",
