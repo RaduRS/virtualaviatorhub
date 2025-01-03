@@ -2,6 +2,8 @@ import { Cormorant_Garamond, Poppins } from "next/font/google";
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
+// import { Check } from "lucide-react";
+import { CheckboxProvider } from "@/context/CheckboxContext";
 
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
@@ -22,13 +24,15 @@ export default function LayoutWithSidebar({
 }>) {
   return (
     <SidebarProvider>
-      <AppSidebar />
-      <main
-        className={`${cormorantGaramond.variable} ${poppins.variable} bg-neutral-100 antialiased font-poppins w-full`}
-      >
-        <SidebarTrigger />
-        {children}
-      </main>
+      <CheckboxProvider>
+        <AppSidebar />
+        <main
+          className={`${cormorantGaramond.variable} ${poppins.variable} bg-neutral-100 antialiased font-poppins w-full`}
+        >
+          <SidebarTrigger />
+          {children}
+        </main>
+      </CheckboxProvider>
     </SidebarProvider>
   );
 }

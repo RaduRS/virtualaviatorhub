@@ -16,6 +16,8 @@ import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useMemo } from "react";
+import { useCheckbox } from "@/context/CheckboxContext";
+import { FancyCheckbox } from "./FancyCheckbox/FancyCheckbox";
 
 type ArticleWithPath = {
   title: string;
@@ -27,6 +29,7 @@ type ArticleWithPath = {
 
 export function AppSidebar() {
   const pathname = usePathname();
+  const { checkedItems, toggleItem } = useCheckbox();
 
   const [groupedArticles, setGroupedArticles] = useState<
     Record<string, ArticleWithPath[]>
@@ -103,81 +106,112 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarContent>
-        {Object.entries(sortedGroupedArticles).map(([chapter, articles]) => {
-          const mainChapter = articles.find(
-            (article) => article.title === chapter
-          );
-          const isExpanded = expandedChapters[chapter] || false;
+        {Object.entries(sortedGroupedArticles).map(
+          ([chapter, articles], index, array) => {
+            const mainChapter = articles.find(
+              (article) => article.title === chapter
+            );
+            const isExpanded = expandedChapters[chapter] || false;
 
-          return (
-            <Collapsible
-              key={chapter}
-              className="group/collapsible"
-              open={isExpanded} // Set initial state from `expandedChapters`
-              onOpenChange={(open) => toggleChapter(chapter, open)} // Pass `open` to set state explicitly
-            >
-              <SidebarGroup>
-                <SidebarGroupLabel asChild>
-                  <CollapsibleTrigger className="flex items-center w-full pl-0">
-                    {mainChapter ? (
-                      <Link
-                        href={mainChapter.isLive ? `/${mainChapter.path}` : "#"}
-                        className={`text-base p-2 w-full text-left ${
-                          mainChapter.isLive
-                            ? "text-gray-800 font-bold hover:underline"
-                            : "text-gray-400 cursor-not-allowed"
-                        } ${
-                          pathname === `/${mainChapter.path}` &&
-                          mainChapter.isLive
-                            ? "bg-gray-200 rounded-md"
-                            : ""
-                        }`}
-                      >
-                        {chapter}
-                      </Link>
-                    ) : (
-                      <span className="text-gray-400">{chapter}</span>
-                    )}
-                    {articles.length > 1 && (
-                      <ChevronDown className="ml-2 transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                    )}
-                  </CollapsibleTrigger>
-                </SidebarGroupLabel>
+            const previousMainChapter =
+              index > 0 ? array[index - 1][1][0]?.mainChapter : null;
+            const currentMainChapter = articles[0]?.mainChapter;
 
-                <CollapsibleContent>
-                  <SidebarGroupContent>
-                    <ul>
-                      {articles
-                        .filter((article) => article.title !== chapter)
-                        .map((article, index) => (
-                          <li
-                            key={`${article.path}-${index}`}
-                            className="py-1 pl-2"
+            return (
+              <div key={chapter}>
+                {/* Display mainChapter heading if it's different from the previous group */}
+                {currentMainChapter &&
+                  currentMainChapter !== previousMainChapter && (
+                    <div>
+                      <hr className="my-2 border-gray-300" />
+                      <h2 className="text-base ml-4 font-bold text-gray-800 my-2">
+                        {currentMainChapter}
+                      </h2>
+                    </div>
+                  )}
+                <Collapsible
+                  key={chapter}
+                  className="group/collapsible"
+                  open={isExpanded} // Set initial state from `expandedChapters`
+                  onOpenChange={(open) => toggleChapter(chapter, open)} // Pass `open` to set state explicitly
+                >
+                  <SidebarGroup>
+                    <SidebarGroupLabel asChild>
+                      <CollapsibleTrigger className="flex items-center w-full pl-0 h-full">
+                        {mainChapter ? (
+                          <Link
+                            href={
+                              mainChapter.isLive ? `/${mainChapter.path}` : "#"
+                            }
+                            className={`text-base p-2 w-full text-left ${
+                              mainChapter.isLive
+                                ? "text-gray-800 font-bold hover:underline"
+                                : "text-gray-400 cursor-not-allowed"
+                            } ${
+                              pathname === `/${mainChapter.path}` &&
+                              mainChapter.isLive
+                                ? "bg-gray-200 rounded-md"
+                                : ""
+                            }`}
                           >
-                            <Link
-                              href={article.isLive ? `/${article.path}` : "#"}
-                              className={`block rounded-md px-2 py-1 ${
-                                article.isLive
-                                  ? "hover:bg-gray-200 text-gray-800"
-                                  : "text-gray-400 cursor-not-allowed"
-                              } ${
-                                pathname === `/${article.path}` &&
-                                article.isLive
-                                  ? "bg-gray-200 font-semibold"
-                                  : ""
-                              }`}
-                            >
-                              {article.title}
-                            </Link>
-                          </li>
-                        ))}
-                    </ul>
-                  </SidebarGroupContent>
-                </CollapsibleContent>
-              </SidebarGroup>
-            </Collapsible>
-          );
-        })}
+                            {chapter}
+                          </Link>
+                        ) : (
+                          <span className="text-gray-400">{chapter}</span>
+                        )}
+                        {articles.length > 1 && (
+                          <ChevronDown className="ml-2 transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                        )}
+                      </CollapsibleTrigger>
+                    </SidebarGroupLabel>
+
+                    <CollapsibleContent>
+                      <SidebarGroupContent>
+                        <ul>
+                          {articles
+                            .filter((article) => article.title !== chapter)
+                            .map((article, index) => (
+                              <li
+                                key={`${article.path}-${index}`}
+                                className={`py-1 pl-2 flex items-center rounded-md px-2 ${
+                                  article.isLive
+                                    ? "hover:underline"
+                                    : "text-gray-400 cursor-not-allowed"
+                                } ${
+                                  pathname === `/${article.path}` &&
+                                  article.isLive
+                                    ? "bg-gray-200 font-semibold"
+                                    : ""
+                                }`}
+                                // className="py-1 pl-2 flex items-center"
+                              >
+                                <FancyCheckbox
+                                  checked={!!checkedItems[article.path]}
+                                  disabled={!article.isLive} // Disable the checkbox if the subtopic is not live
+                                  onChange={() =>
+                                    article.isLive && toggleItem(article.path)
+                                  } // Only toggle if live
+                                  color="blue" // Optional: Set color theme
+                                />
+                                <Link
+                                  href={
+                                    article.isLive ? `/${article.path}` : "#"
+                                  }
+                                  className="ml-2"
+                                >
+                                  {article.title}
+                                </Link>
+                              </li>
+                            ))}
+                        </ul>
+                      </SidebarGroupContent>
+                    </CollapsibleContent>
+                  </SidebarGroup>
+                </Collapsible>
+              </div>
+            );
+          }
+        )}
       </SidebarContent>
     </Sidebar>
   );
