@@ -21,6 +21,7 @@ import { useEffect, useState, useMemo } from "react";
 type ArticleWithPath = {
   title: string;
   chapter: string;
+  mainChapter: string;
   path: string;
   isLive: boolean;
 };
@@ -67,7 +68,7 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarContent>
-        {Object.entries(groupedArticles).map(([chapter, articles], index) => {
+        {Object.entries(groupedArticles).map(([chapter, articles]) => {
           const mainChapter = articles.find(
             (article) => article.title === chapter
           );
@@ -82,7 +83,7 @@ export function AppSidebar() {
             >
               <SidebarGroup>
                 <SidebarGroupLabel asChild>
-                  <CollapsibleTrigger className="flex items-center w-full">
+                  <CollapsibleTrigger className="flex items-center w-full pl-0">
                     {mainChapter ? (
                       <Link
                         href={mainChapter.isLive ? `/${mainChapter.path}` : "#"}
@@ -97,12 +98,10 @@ export function AppSidebar() {
                             : ""
                         }`}
                       >
-                        {index + 1}. {chapter}
+                        {chapter}
                       </Link>
                     ) : (
-                      <span className="text-gray-400">
-                        {index + 1}. {chapter}
-                      </span>
+                      <span className="text-gray-400">{chapter}</span>
                     )}
                     <ChevronDown className="ml-2 transition-transform group-data-[state=open]/collapsible:rotate-180" />
                   </CollapsibleTrigger>
@@ -114,7 +113,7 @@ export function AppSidebar() {
                       {articles
                         .filter((article) => article.title !== chapter)
                         .map((article) => (
-                          <li key={article.path} className="py-1 pl-4">
+                          <li key={article.path} className="py-1 pl-2">
                             <Link
                               href={article.isLive ? `/${article.path}` : "#"}
                               className={`block rounded-md px-2 py-1 ${

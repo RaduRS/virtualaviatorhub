@@ -35,6 +35,7 @@ const generateMarkdownFiles = () => {
       const currentDate = new Date().toISOString().split("T")[0];
       const newContent = `---
 title: "${metadata.title}"
+mainChapter: "${metadata.mainChapter}"
 chapter: "${metadata.chapter}"
 isLive: ${metadata.isLive}
 resources:

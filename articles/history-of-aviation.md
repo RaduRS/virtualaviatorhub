@@ -1,8 +1,8 @@
 ---
 title: History of Aviation
+mainChapter: Introduction to Aviation
 chapter: What is Aviation?
 isLive: true
-date: '2025-01-02'
 resources:
   - type: video
     url: 'https://www.youtube.com/watch?v=example'
@@ -12,6 +12,7 @@ resources:
     url: 'https://www.example.com/aviation'
   - type: article
     url: 'https://www.example.com/aviation'
+date: '2025-01-03'
 ---
 
 # History of Aviation

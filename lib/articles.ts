@@ -23,6 +23,7 @@ const getSortedArticles = (): ArticleItem[] => {
     return {
       id,
       title: matterResult.data.title,
+      mainChapter: matterResult.data.mainChapter,
       chapter: matterResult.data.chapter,
       isLive: matterResult.data.isLive || false,
       resources: matterResult.data.resources || [],
@@ -66,6 +67,7 @@ export const getArticleData = async (id: string) => {
     id,
     contentHtml,
     title: matterResult.data.title,
+    mainChapter: matterResult.data.mainChapter,
     chapter: matterResult.data.chapter,
     isLive: matterResult.data.isLive || false,
     resources: matterResult.data.resources || [],

@@ -15,7 +15,7 @@ const Article = async ({ params }: { params: { slug: string } }) => {
   );
 
   return (
-    <section className="mx-auto w-10/12 xl:w-8/12 flex flex-col gap-8 mt-2 mb-20">
+    <section className="mx-auto w-11/12 xl:w-10/12 2xl:w-8/12 flex flex-col gap-8 mt-2 mb-20">
       {/* Back to home and Chapter */}
       <Header />
 
@@ -63,7 +63,7 @@ const Article = async ({ params }: { params: { slug: string } }) => {
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-blue-600 font-medium underline"
+                    className="text-gray-700 hover:text-blue-600 font-medium text-sm underline"
                   >
                     {resource.type === "video" ? "Watch Video" : "Read Article"}
                   </a>
