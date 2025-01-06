@@ -2,13 +2,14 @@ import { ArticleItem } from "./types";
 
 export const articlesMetadata: Record<
   string,
-  Omit<ArticleItem, "id" | "date">
+  Omit<ArticleItem, "id" | "date" | "content">
 > = {
   "what-is-aviation": {
     title: "1.1 What is Aviation?",
     chapter: "1.1 What is Aviation?",
     mainChapter: "Introduction to Aviation",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "article", url: "https://www.example.com/aviation" },
@@ -19,6 +20,7 @@ export const articlesMetadata: Record<
     chapter: "1.1 What is Aviation?",
     mainChapter: "Introduction to Aviation",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
@@ -31,6 +33,7 @@ export const articlesMetadata: Record<
     chapter: "1.1 What is Aviation?",
     mainChapter: "Introduction to Aviation",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "article", url: "https://www.example.com/aviation" },
@@ -41,6 +44,7 @@ export const articlesMetadata: Record<
     chapter: "1.2 Flight Simulation Basics",
     mainChapter: "Introduction to Aviation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "article", url: "https://www.example.com/aviation" },
@@ -51,6 +55,7 @@ export const articlesMetadata: Record<
     chapter: "1.2 Flight Simulation Basics",
     mainChapter: "Introduction to Aviation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "article", url: "https://www.example.com/aviation" },
@@ -61,6 +66,7 @@ export const articlesMetadata: Record<
     chapter: "1.2 Flight Simulation Basics",
     mainChapter: "Introduction to Aviation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "article", url: "https://www.example.com/aviation" },
@@ -71,6 +77,7 @@ export const articlesMetadata: Record<
     chapter: "1.2 Flight Simulation Basics",
     mainChapter: "Introduction to Aviation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
       { type: "video", url: "https://www.youtube.com/watch?v=example" },
@@ -83,6 +90,7 @@ export const articlesMetadata: Record<
     chapter: "2.1 Understanding Airspace",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -99,6 +107,7 @@ export const articlesMetadata: Record<
     chapter: "2.1 Understanding Airspace",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-classes" },
       { type: "article", url: "https://www.example.com/classes-of-airspace" },
@@ -109,6 +118,7 @@ export const articlesMetadata: Record<
     chapter: "2.1 Understanding Airspace",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/controlled-airspace" },
     ],
@@ -118,6 +128,7 @@ export const articlesMetadata: Record<
     chapter: "2.1 Understanding Airspace",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-special" },
     ],
@@ -127,6 +138,7 @@ export const articlesMetadata: Record<
     chapter: "2.2 Basic Aircraft Anatomy",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-anatomy" },
       {
@@ -140,6 +152,7 @@ export const articlesMetadata: Record<
     chapter: "2.2 Basic Aircraft Anatomy",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/parts-of-an-aircraft" },
     ],
@@ -149,6 +162,7 @@ export const articlesMetadata: Record<
     chapter: "2.2 Basic Aircraft Anatomy",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -161,6 +175,7 @@ export const articlesMetadata: Record<
     chapter: "2.2 Basic Aircraft Anatomy",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -173,6 +188,7 @@ export const articlesMetadata: Record<
     chapter: "2.3 Basic Aviation Terms and Abbreviations",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/basic-aviation-terms" },
     ],
@@ -182,6 +198,7 @@ export const articlesMetadata: Record<
     chapter: "2.3 Basic Aviation Terms and Abbreviations",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/common-aviation-terms" },
     ],
@@ -191,6 +208,7 @@ export const articlesMetadata: Record<
     chapter: "2.3 Basic Aviation Terms and Abbreviations",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -203,6 +221,7 @@ export const articlesMetadata: Record<
     chapter: "2.3 Basic Aviation Terms and Abbreviations",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -215,6 +234,7 @@ export const articlesMetadata: Record<
     chapter: "2.4 Understanding Charts",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -227,6 +247,7 @@ export const articlesMetadata: Record<
     chapter: "2.4 Understanding Charts",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/vfr-sectional-charts" },
     ],
@@ -236,6 +257,7 @@ export const articlesMetadata: Record<
     chapter: "2.4 Understanding Charts",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -248,6 +270,7 @@ export const articlesMetadata: Record<
     chapter: "2.4 Understanding Charts",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/legend-and-symbols" },
     ],
@@ -257,6 +280,7 @@ export const articlesMetadata: Record<
     chapter: "2.5 Airport Basics",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -270,6 +294,7 @@ export const articlesMetadata: Record<
     chapter: "2.5 Airport Basics",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/airport-layouts" },
     ],
@@ -279,6 +304,7 @@ export const articlesMetadata: Record<
     chapter: "2.5 Airport Basics",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -291,6 +317,7 @@ export const articlesMetadata: Record<
     chapter: "2.5 Airport Basics",
     mainChapter: "Basics I: Foundations",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/atis-and-notams" },
     ],
@@ -300,6 +327,7 @@ export const articlesMetadata: Record<
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -313,6 +341,7 @@ export const articlesMetadata: Record<
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "article",
@@ -325,6 +354,7 @@ export const articlesMetadata: Record<
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -337,6 +367,7 @@ export const articlesMetadata: Record<
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/stability-and-control" },
     ],
@@ -346,6 +377,7 @@ export const articlesMetadata: Record<
     chapter: "3.1 Principles of Flight",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -358,6 +390,7 @@ export const articlesMetadata: Record<
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/aircraft-instruments" },
     ],
@@ -368,6 +401,7 @@ export const articlesMetadata: Record<
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-6-pack" },
     ],
@@ -377,6 +411,7 @@ export const articlesMetadata: Record<
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/pitot-static-systems" },
     ],
@@ -386,6 +421,7 @@ export const articlesMetadata: Record<
     chapter: "3.2 Aircraft Instruments",
     mainChapter: "Basics II: Core Skills",
     isLive: true,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -398,6 +434,7 @@ export const articlesMetadata: Record<
     chapter: "3.3 Basic Navigation",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/basic-navigation" },
     ],
@@ -407,6 +444,7 @@ export const articlesMetadata: Record<
     chapter: "3.3 Basic Navigation",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -419,6 +457,7 @@ export const articlesMetadata: Record<
     chapter: "3.3 Basic Navigation",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/reading-a-compass" },
     ],
@@ -428,6 +467,7 @@ export const articlesMetadata: Record<
     chapter: "3.3 Basic Navigation",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -440,6 +480,7 @@ export const articlesMetadata: Record<
     chapter: "3.4 Weather Basics",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/weather-basics" },
     ],
@@ -449,6 +490,7 @@ export const articlesMetadata: Record<
     chapter: "3.4 Weather Basics",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -461,6 +503,7 @@ export const articlesMetadata: Record<
     chapter: "3.4 Weather Basics",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "article", url: "https://www.example.com/effects-of-weather" },
     ],
@@ -470,6 +513,7 @@ export const articlesMetadata: Record<
     chapter: "3.4 Weather Basics",
     mainChapter: "Basics II: Core Skills",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -482,6 +526,7 @@ export const articlesMetadata: Record<
     chapter: "4.1 Phases of ATC Communication",
     mainChapter: "Air Traffic Control (ATC)",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -495,6 +540,7 @@ export const articlesMetadata: Record<
     chapter: "4.2 Phraseology and Best Practices",
     mainChapter: "Air Traffic Control (ATC)",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -511,6 +557,7 @@ export const articlesMetadata: Record<
     chapter: "4.3 VFR vs. IFR Communication",
     mainChapter: "Air Traffic Control (ATC)",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-vfr-ifr" },
       { type: "article", url: "https://www.example.com/vfr-ifr-communication" },
@@ -521,6 +568,7 @@ export const articlesMetadata: Record<
     chapter: "4.4 Flight Following and Clearance Delivery",
     mainChapter: "Air Traffic Control (ATC)",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -537,6 +585,7 @@ export const articlesMetadata: Record<
     chapter: "5.1 VFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -550,6 +599,7 @@ export const articlesMetadata: Record<
     chapter: "5.1 VFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -563,6 +613,7 @@ export const articlesMetadata: Record<
     chapter: "5.1 VFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -576,6 +627,7 @@ export const articlesMetadata: Record<
     chapter: "5.1 VFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -589,6 +641,7 @@ export const articlesMetadata: Record<
     chapter: "5.2 IFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -602,6 +655,7 @@ export const articlesMetadata: Record<
     chapter: "5.2 IFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -615,6 +669,7 @@ export const articlesMetadata: Record<
     chapter: "5.2 IFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -628,6 +683,7 @@ export const articlesMetadata: Record<
     chapter: "5.2 IFR Navigation",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -641,6 +697,7 @@ export const articlesMetadata: Record<
     chapter: "5.3 Instrument Approaches",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -654,6 +711,7 @@ export const articlesMetadata: Record<
     chapter: "5.3 Instrument Approaches",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -668,6 +726,7 @@ export const articlesMetadata: Record<
     chapter: "5.3 Instrument Approaches",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-npa" },
       { type: "article", url: "https://www.example.com/npa" },
@@ -678,6 +737,7 @@ export const articlesMetadata: Record<
     chapter: "5.3 Instrument Approaches",
     mainChapter: "Navigation and Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-apv" },
       { type: "article", url: "https://www.example.com/apv" },
@@ -688,6 +748,7 @@ export const articlesMetadata: Record<
     chapter: "6.1 Autopilot Systems",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -701,6 +762,7 @@ export const articlesMetadata: Record<
     chapter: "6.1 Autopilot Systems",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -714,6 +776,7 @@ export const articlesMetadata: Record<
     chapter: "6.1 Autopilot Systems",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -727,6 +790,7 @@ export const articlesMetadata: Record<
     chapter: "6.1 Autopilot Systems",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -740,6 +804,7 @@ export const articlesMetadata: Record<
     chapter: "6.2 Holding Patterns",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -753,6 +818,7 @@ export const articlesMetadata: Record<
     chapter: "6.2 Holding Patterns",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -766,6 +832,7 @@ export const articlesMetadata: Record<
     chapter: "6.2 Holding Patterns",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -779,6 +846,7 @@ export const articlesMetadata: Record<
     chapter: "6.2 Holding Patterns",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -792,6 +860,7 @@ export const articlesMetadata: Record<
     chapter: "6.3 Emergency Procedures",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -805,6 +874,7 @@ export const articlesMetadata: Record<
     chapter: "6.3 Emergency Procedures",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -818,6 +888,7 @@ export const articlesMetadata: Record<
     chapter: "6.3 Emergency Procedures",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-mayday" },
       { type: "article", url: "https://www.example.com/mayday" },
@@ -828,6 +899,7 @@ export const articlesMetadata: Record<
     chapter: "6.3 Emergency Procedures",
     mainChapter: "Advanced Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -841,6 +913,7 @@ export const articlesMetadata: Record<
     chapter: "7.1 Engine Basics",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -854,6 +927,7 @@ export const articlesMetadata: Record<
     chapter: "7.1 Engine Basics",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -867,6 +941,7 @@ export const articlesMetadata: Record<
     chapter: "7.1 Engine Basics",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -880,6 +955,7 @@ export const articlesMetadata: Record<
     chapter: "7.1 Engine Basics",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -893,6 +969,7 @@ export const articlesMetadata: Record<
     chapter: "7.2 Electrical Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -906,6 +983,7 @@ export const articlesMetadata: Record<
     chapter: "7.2 Electrical Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -919,6 +997,7 @@ export const articlesMetadata: Record<
     chapter: "7.2 Electrical Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -932,6 +1011,7 @@ export const articlesMetadata: Record<
     chapter: "7.2 Electrical Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -945,6 +1025,7 @@ export const articlesMetadata: Record<
     chapter: "7.3 Flight Control Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -958,6 +1039,7 @@ export const articlesMetadata: Record<
     chapter: "7.3 Flight Control Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -971,6 +1053,7 @@ export const articlesMetadata: Record<
     chapter: "7.3 Flight Control Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -984,6 +1067,7 @@ export const articlesMetadata: Record<
     chapter: "7.4 Fuel Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -997,6 +1081,7 @@ export const articlesMetadata: Record<
     chapter: "7.4 Fuel Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1010,6 +1095,7 @@ export const articlesMetadata: Record<
     chapter: "7.4 Fuel Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1023,6 +1109,7 @@ export const articlesMetadata: Record<
     chapter: "7.4 Fuel Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1036,6 +1123,7 @@ export const articlesMetadata: Record<
     chapter: "7.5 Pressurization Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1052,6 +1140,7 @@ export const articlesMetadata: Record<
     chapter: "7.5 Pressurization Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1065,6 +1154,7 @@ export const articlesMetadata: Record<
     chapter: "7.5 Pressurization Systems",
     mainChapter: "Aircraft Systems",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-hypoxia" },
       { type: "article", url: "https://www.example.com/hypoxia" },
@@ -1075,6 +1165,7 @@ export const articlesMetadata: Record<
     chapter: "8.1 GPS and RNAV",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1088,6 +1179,7 @@ export const articlesMetadata: Record<
     chapter: "8.1 GPS and RNAV",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1101,6 +1193,7 @@ export const articlesMetadata: Record<
     chapter: "8.1 GPS and RNAV",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1114,6 +1207,7 @@ export const articlesMetadata: Record<
     chapter: "8.1 GPS and RNAV",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1127,6 +1221,7 @@ export const articlesMetadata: Record<
     chapter: "8.2 Flight Planning",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1140,6 +1235,7 @@ export const articlesMetadata: Record<
     chapter: "8.2 Flight Planning",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1153,6 +1249,7 @@ export const articlesMetadata: Record<
     chapter: "8.2 Flight Planning",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1166,6 +1263,7 @@ export const articlesMetadata: Record<
     chapter: "8.2 Flight Planning",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1179,6 +1277,7 @@ export const articlesMetadata: Record<
     chapter: "8.3 Sim Navigation Tools",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1192,6 +1291,7 @@ export const articlesMetadata: Record<
     chapter: "8.3 Sim Navigation Tools",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1205,6 +1305,7 @@ export const articlesMetadata: Record<
     chapter: "8.3 Sim Navigation Tools",
     mainChapter: "Advanced Navigation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1218,6 +1319,7 @@ export const articlesMetadata: Record<
     chapter: "9.1 Cessna 172",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1231,6 +1333,7 @@ export const articlesMetadata: Record<
     chapter: "9.1 Cessna 172",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1244,6 +1347,7 @@ export const articlesMetadata: Record<
     chapter: "9.1 Cessna 172",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1257,6 +1361,7 @@ export const articlesMetadata: Record<
     chapter: "9.1 Cessna 172",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1270,6 +1375,7 @@ export const articlesMetadata: Record<
     chapter: "9.2 Airliners (Boeing, Airbus)",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1283,6 +1389,7 @@ export const articlesMetadata: Record<
     chapter: "9.2 Airliners (Boeing, Airbus)",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1296,6 +1403,7 @@ export const articlesMetadata: Record<
     chapter: "9.2 Airliners (Boeing, Airbus)",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1309,6 +1417,7 @@ export const articlesMetadata: Record<
     chapter: "9.2 Airliners (Boeing, Airbus)",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1322,6 +1431,7 @@ export const articlesMetadata: Record<
     chapter: "9.3 Helicopters",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1335,6 +1445,7 @@ export const articlesMetadata: Record<
     chapter: "9.3 Helicopters",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1348,6 +1459,7 @@ export const articlesMetadata: Record<
     chapter: "9.3 Helicopters",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1361,6 +1473,7 @@ export const articlesMetadata: Record<
     chapter: "9.3 Helicopters",
     mainChapter: "Aircraft-Specific Procedures",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1374,6 +1487,7 @@ export const articlesMetadata: Record<
     chapter: "10.1 Advanced Weather",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1387,6 +1501,7 @@ export const articlesMetadata: Record<
     chapter: "10.1 Advanced Weather",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-imc" },
       { type: "article", url: "https://www.example.com/imc" },
@@ -1397,6 +1512,7 @@ export const articlesMetadata: Record<
     chapter: "10.1 Advanced Weather",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1410,6 +1526,7 @@ export const articlesMetadata: Record<
     chapter: "10.1 Advanced Weather",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-icing" },
       { type: "article", url: "https://www.example.com/icing" },
@@ -1420,6 +1537,7 @@ export const articlesMetadata: Record<
     chapter: "10.2 Aerodynamics of Maneuvering",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1433,6 +1551,7 @@ export const articlesMetadata: Record<
     chapter: "10.2 Aerodynamics of Maneuvering",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-turns" },
       { type: "article", url: "https://www.example.com/turns" },
@@ -1443,6 +1562,7 @@ export const articlesMetadata: Record<
     chapter: "10.2 Aerodynamics of Maneuvering",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1456,6 +1576,7 @@ export const articlesMetadata: Record<
     chapter: "10.2 Aerodynamics of Maneuvering",
     mainChapter: "Weather and Aerodynamics",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1471,6 +1592,7 @@ export const articlesMetadata: Record<
     chapter: "11.1 Entry Requirements and Transitioning",
     mainChapter: "Airspace and Flight Rules",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1484,6 +1606,7 @@ export const articlesMetadata: Record<
     chapter: "11.2 VFR/IFR Cruising Altitudes",
     mainChapter: "Airspace and Flight Rules",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1497,6 +1620,7 @@ export const articlesMetadata: Record<
     chapter: "11.3 Right-of-Way Rules",
     mainChapter: "Airspace and Flight Rules",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1510,6 +1634,7 @@ export const articlesMetadata: Record<
     chapter: "11.4 FAR/AIM Overview and Minimum Safe Altitudes",
     mainChapter: "Airspace and Flight Rules",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-far-aim" },
       { type: "article", url: "https://www.example.com/far-aim" },
@@ -1520,6 +1645,7 @@ export const articlesMetadata: Record<
     chapter: "12.1 SimBrief Tutorials",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1533,6 +1659,7 @@ export const articlesMetadata: Record<
     chapter: "12.1 SimBrief Tutorials",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1546,6 +1673,7 @@ export const articlesMetadata: Record<
     chapter: "12.1 SimBrief Tutorials",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1559,6 +1687,7 @@ export const articlesMetadata: Record<
     chapter: "12.1 SimBrief Tutorials",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1572,6 +1701,7 @@ export const articlesMetadata: Record<
     chapter: "12.2 Chart Reading",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-charts" },
       { type: "article", url: "https://www.example.com/charts" },
@@ -1582,6 +1712,7 @@ export const articlesMetadata: Record<
     chapter: "12.2 Chart Reading",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1595,6 +1726,7 @@ export const articlesMetadata: Record<
     chapter: "12.2 Chart Reading",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1608,6 +1740,7 @@ export const articlesMetadata: Record<
     chapter: "12.2 Chart Reading",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-runway" },
       { type: "article", url: "https://www.example.com/runway" },
@@ -1618,6 +1751,7 @@ export const articlesMetadata: Record<
     chapter: "12.3 VR and Sim Accessories",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-vr" },
       { type: "article", url: "https://www.example.com/vr-accessories" },
@@ -1628,6 +1762,7 @@ export const articlesMetadata: Record<
     chapter: "12.3 VR and Sim Accessories",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1641,6 +1776,7 @@ export const articlesMetadata: Record<
     chapter: "12.3 VR and Sim Accessories",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1654,6 +1790,7 @@ export const articlesMetadata: Record<
     chapter: "12.3 VR and Sim Accessories",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1667,6 +1804,7 @@ export const articlesMetadata: Record<
     chapter: "12.4 Peripherals Setup",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1680,6 +1818,7 @@ export const articlesMetadata: Record<
     chapter: "12.4 Peripherals Setup",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1693,6 +1832,7 @@ export const articlesMetadata: Record<
     chapter: "12.4 Peripherals Setup",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1706,6 +1846,7 @@ export const articlesMetadata: Record<
     chapter: "12.4 Peripherals Setup",
     mainChapter: "Learning Resources and Tools",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1719,6 +1860,7 @@ export const articlesMetadata: Record<
     chapter: "13.1 Real-World Procedures in Sim",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1732,6 +1874,7 @@ export const articlesMetadata: Record<
     chapter: "13.1 Real-World Procedures in Sim",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1745,6 +1888,7 @@ export const articlesMetadata: Record<
     chapter: "13.1 Real-World Procedures in Sim",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1758,6 +1902,7 @@ export const articlesMetadata: Record<
     chapter: "13.1 Real-World Procedures in Sim",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1771,6 +1916,7 @@ export const articlesMetadata: Record<
     chapter: "13.2 Joining Virtual Airlines",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1784,6 +1930,7 @@ export const articlesMetadata: Record<
     chapter: "13.2 Joining Virtual Airlines",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1797,6 +1944,7 @@ export const articlesMetadata: Record<
     chapter: "13.2 Joining Virtual Airlines",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-vatsim" },
       { type: "article", url: "https://www.example.com/vatsim-flights" },
@@ -1807,6 +1955,7 @@ export const articlesMetadata: Record<
     chapter: "13.2 Joining Virtual Airlines",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1820,6 +1969,7 @@ export const articlesMetadata: Record<
     chapter: "13.3 Real-World Flight Planning",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1832,7 +1982,8 @@ export const articlesMetadata: Record<
     title: "Using Real-World Weather Data in Sim",
     chapter: "13.3 Real-World Flight Planning",
     mainChapter: "Advanced Skills and Real-World Applications",
-    isLive: true,
+    isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1846,6 +1997,7 @@ export const articlesMetadata: Record<
     chapter: "13.3 Real-World Flight Planning",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1859,6 +2011,7 @@ export const articlesMetadata: Record<
     chapter: "13.3 Real-World Flight Planning",
     mainChapter: "Advanced Skills and Real-World Applications",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1872,6 +2025,7 @@ export const articlesMetadata: Record<
     chapter: "14.1 Flying with Failures",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1885,6 +2039,7 @@ export const articlesMetadata: Record<
     chapter: "14.1 Flying with Failures",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1898,6 +2053,7 @@ export const articlesMetadata: Record<
     chapter: "14.1 Flying with Failures",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1911,6 +2067,7 @@ export const articlesMetadata: Record<
     chapter: "14.1 Flying with Failures",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1924,6 +2081,7 @@ export const articlesMetadata: Record<
     chapter: "14.2 Multi-Crew Coordination",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1940,6 +2098,7 @@ export const articlesMetadata: Record<
     chapter: "14.2 Multi-Crew Coordination",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1953,6 +2112,7 @@ export const articlesMetadata: Record<
     chapter: "14.2 Multi-Crew Coordination",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1966,6 +2126,7 @@ export const articlesMetadata: Record<
     chapter: "14.2 Multi-Crew Coordination",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1982,6 +2143,7 @@ export const articlesMetadata: Record<
     chapter: "14.3 Advanced ATC Systems",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -1995,6 +2157,7 @@ export const articlesMetadata: Record<
     chapter: "14.3 Advanced ATC Systems",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2008,6 +2171,7 @@ export const articlesMetadata: Record<
     chapter: "14.3 Advanced ATC Systems",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2021,6 +2185,7 @@ export const articlesMetadata: Record<
     chapter: "14.3 Advanced ATC Systems",
     mainChapter: "Professional-Level Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2034,6 +2199,7 @@ export const articlesMetadata: Record<
     chapter: "15.1 Becoming a Virtual Airline Pilot",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2047,6 +2213,7 @@ export const articlesMetadata: Record<
     chapter: "15.1 Becoming a Virtual Airline Pilot",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2063,6 +2230,7 @@ export const articlesMetadata: Record<
     chapter: "15.1 Becoming a Virtual Airline Pilot",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2079,6 +2247,7 @@ export const articlesMetadata: Record<
     chapter: "15.1 Becoming a Virtual Airline Pilot",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2095,6 +2264,7 @@ export const articlesMetadata: Record<
     chapter: "15.2 Exploring Real-World Aviation Careers",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2108,6 +2278,7 @@ export const articlesMetadata: Record<
     chapter: "15.2 Exploring Real-World Aviation Careers",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2121,6 +2292,7 @@ export const articlesMetadata: Record<
     chapter: "15.2 Exploring Real-World Aviation Careers",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2137,6 +2309,7 @@ export const articlesMetadata: Record<
     chapter: "15.2 Exploring Real-World Aviation Careers",
     mainChapter: "Career Progression in Simulation",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2150,6 +2323,7 @@ export const articlesMetadata: Record<
     chapter: "16.1 Joining the Sim Community",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2163,6 +2337,7 @@ export const articlesMetadata: Record<
     chapter: "16.1 Joining the Sim Community",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2176,6 +2351,7 @@ export const articlesMetadata: Record<
     chapter: "16.1 Joining the Sim Community",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2189,6 +2365,7 @@ export const articlesMetadata: Record<
     chapter: "16.1 Joining the Sim Community",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-events" },
       { type: "article", url: "https://www.example.com/events" },
@@ -2199,6 +2376,7 @@ export const articlesMetadata: Record<
     chapter: "16.2 Participating in Fly-Ins",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       { type: "video", url: "https://www.youtube.com/watch?v=example-fly-ins" },
       { type: "article", url: "https://www.example.com/fly-ins" },
@@ -2209,6 +2387,7 @@ export const articlesMetadata: Record<
     chapter: "16.2 Participating in Fly-Ins",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2222,6 +2401,7 @@ export const articlesMetadata: Record<
     chapter: "16.2 Participating in Fly-Ins",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",
@@ -2235,6 +2415,7 @@ export const articlesMetadata: Record<
     chapter: "16.2 Participating in Fly-Ins",
     mainChapter: "Community and Events",
     isLive: false,
+    image: "/placeholder.jpeg",
     resources: [
       {
         type: "video",

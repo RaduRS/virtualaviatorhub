@@ -26,7 +26,9 @@ const getSortedArticles = (): ArticleItem[] => {
       mainChapter: matterResult.data.mainChapter,
       chapter: matterResult.data.chapter,
       isLive: matterResult.data.isLive || false,
+      image: matterResult.data.image,
       resources: matterResult.data.resources || [],
+      content: matterResult.content || "",
       date,
     };
   });
@@ -73,7 +75,9 @@ export const getArticleData = async (id: string) => {
     mainChapter: matterResult.data.mainChapter,
     chapter: matterResult.data.chapter,
     isLive: matterResult.data.isLive || false,
+    image: matterResult.data.image,
     resources: matterResult.data.resources || [],
+    content: matterResult.content || "",
     date,
   };
 };
@@ -95,7 +99,9 @@ export const getAllArticlesMetadata = async () => {
       mainChapter: matterResult.data.mainChapter,
       chapter: matterResult.data.chapter,
       isLive: matterResult.data.isLive || false,
+      image: matterResult.data.image,
       resources: matterResult.data.resources || [],
+      content: matterResult.content || "",
       date: moment(matterResult.data.date, "DD-MM-YYYY").format("DD-MM-YYYY"),
     };
   });
@@ -108,4 +114,30 @@ export const getAllArticlesMetadata = async () => {
     acc[article.chapter].push(article);
     return acc;
   }, {} as Record<string, ArticleItem[]>);
+};
+
+export const sanitizeAndTruncateContent = (
+  content: string | null,
+  title: string,
+  maxLength: number = 200
+): string => {
+  if (!content) {
+    return "No description available.";
+  }
+
+  // Sanitize the content
+  const sanitizedContent = content
+    .replace(/[#>*_`[\]]+/g, "") // Remove markdown syntax
+    .replace(/\n+/g, " ") // Remove line breaks
+    .trim();
+
+  // Remove the title from the content to avoid duplication
+  const filteredContent = sanitizedContent.startsWith(title)
+    ? sanitizedContent.slice(title.length).trim()
+    : sanitizedContent;
+
+  // Truncate the content to the specified max length
+  return filteredContent.length > maxLength
+    ? filteredContent.slice(0, maxLength).trim() + "..."
+    : filteredContent;
 };

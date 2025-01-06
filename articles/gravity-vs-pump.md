@@ -3,12 +3,13 @@ title: Gravity-Fed vs. Pump Systems
 mainChapter: Aircraft Systems
 chapter: 7.4 Fuel Systems
 isLive: false
+image: /placeholder.jpeg
 resources:
   - type: video
     url: 'https://www.youtube.com/watch?v=example-gravity-pump'
   - type: article
     url: 'https://www.example.com/gravity-pump'
-date: '2025-01-03'
+date: '2025-01-06'
 ---
 
 # Gravity-Fed vs. Pump Systems

@@ -23,6 +23,7 @@ const generateMarkdownFiles = () => {
       const updatedData = {
         ...data,
         isLive: metadata.isLive,
+        image: metadata.image || "./placeholder.jpeg",
         resources: metadata.resources || [],
       };
 
@@ -38,6 +39,7 @@ title: "${metadata.title}"
 mainChapter: "${metadata.mainChapter}"
 chapter: "${metadata.chapter}"
 isLive: ${metadata.isLive}
+image: "${metadata.image || "./placeholder.jpeg"}"
 resources:
 ${
   metadata.resources

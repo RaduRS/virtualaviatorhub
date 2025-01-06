@@ -3,12 +3,13 @@ title: Alternate Airports
 mainChapter: Navigation and Procedures
 chapter: 5.2 IFR Navigation
 isLive: false
+image: /placeholder.jpeg
 resources:
   - type: video
     url: 'https://www.youtube.com/watch?v=example-alternate-airports'
   - type: article
     url: 'https://www.example.com/alternate-airports'
-date: '2025-01-03'
+date: '2025-01-06'
 ---
 
 # Alternate Airports

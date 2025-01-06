@@ -3,10 +3,11 @@ title: VFR Sectional Charts
 mainChapter: 'Basics I: Foundations'
 chapter: 2.4 Understanding Charts
 isLive: false
+image: /placeholder.jpeg
 resources:
   - type: article
     url: 'https://www.example.com/vfr-sectional-charts'
-date: '2025-01-03'
+date: '2025-01-06'
 ---
 
 # VFR Sectional Charts

@@ -10,6 +10,8 @@ export type ArticleItem = {
   date: string;
   isLive: boolean;
   resources: Resource[];
+  image: string;
+  content: string;
 };
 
 export type ArticleWithPath = {
