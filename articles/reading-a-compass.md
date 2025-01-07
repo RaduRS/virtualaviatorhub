@@ -5,7 +5,8 @@ chapter: 3.3 Basic Navigation
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/reading-a-compass'
 date: '2025-01-06'
 ---

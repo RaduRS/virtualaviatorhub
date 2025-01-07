@@ -15,7 +15,7 @@ const Article = async ({ params }: { params: { slug: string } }) => {
   );
 
   return (
-    <section className="mx-auto w-11/12 xl:w-10/12 2xl:w-8/12 flex flex-col gap-8 mt-2 mb-20">
+    <section className="mx-auto w-11/12 xl:w-10/12 2xl:w-8/12 flex flex-col gap-4 mt-2 mb-20">
       {/* Back to home and Chapter */}
       <Header />
 
@@ -36,7 +36,7 @@ const Article = async ({ params }: { params: { slug: string } }) => {
         )}
       </div>
       {/* Main content and resources */}
-      <div className="grid grid-cols-1 lg:grid-cols-[auto_20%] gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-[auto_20%] gap-4">
         {/* Main article */}
         <article
           className="article bg-white !leading-[32px] py-6 px-6 md:px-12 text-base md:text-lg rounded-lg shadow-md overflow-y-auto"
@@ -52,24 +52,20 @@ const Article = async ({ params }: { params: { slug: string } }) => {
             <ul className="flex flex-col gap-4">
               {articleMetadata.resources.map((resource, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  {/* Icon */}
-                  {resource.type === "video" ? (
-                    <VideoCameraIcon className="h-4 w-4 text-blue-500" />
-                  ) : (
-                    <BookOpenIcon className="h-4 w-4 text-green-500" />
-                  )}
-                  {/* Link */}
+                  <div className="flex items-center justify-center min-h-[24px] min-w-[24px]">
+                    {resource.type === "video" ? (
+                      <VideoCameraIcon className="h-6 w-6 text-blue-500" />
+                    ) : (
+                      <BookOpenIcon className="h-6 w-6 text-green-500" />
+                    )}
+                  </div>
                   <Link
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-blue-600 font-medium text-sm underline"
                   >
-                    {resource.title
-                      ? resource.title
-                      : resource.type === "video"
-                      ? "Watch Video"
-                      : "Read Article"}
+                    {resource.title}
                   </Link>
                 </li>
               ))}

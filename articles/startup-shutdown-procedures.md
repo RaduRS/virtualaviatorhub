@@ -5,9 +5,11 @@ chapter: 9.1 Cessna 172
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-startup-shutdown'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/startup-shutdown'
 date: '2025-01-06'
 ---

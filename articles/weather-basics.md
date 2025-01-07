@@ -5,7 +5,8 @@ chapter: 3.4 Weather Basics
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/weather-basics'
 date: '2025-01-06'
 ---

@@ -5,9 +5,11 @@ chapter: 10.2 Aerodynamics of Maneuvering
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-turns'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/turns'
 date: '2025-01-06'
 ---

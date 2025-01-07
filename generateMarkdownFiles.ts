@@ -45,7 +45,8 @@ ${
   metadata.resources
     ? metadata.resources
         .map(
-          (resource) => `  - type: ${resource.type}\n    url: ${resource.url}`
+          (resource) =>
+            `  - title: ${resource.title}\n type: ${resource.type}   url: ${resource.url}`
         )
         .join("\n")
     : ""

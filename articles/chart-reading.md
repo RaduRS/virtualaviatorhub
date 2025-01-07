@@ -5,9 +5,11 @@ chapter: 12.2 Chart Reading
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-charts'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/charts'
 date: '2025-01-06'
 ---

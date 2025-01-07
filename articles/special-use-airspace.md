@@ -5,7 +5,8 @@ chapter: 2.1 Understanding Airspace
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-special'
 date: '2025-01-06'
 ---

@@ -5,9 +5,11 @@ chapter: 3.1 Principles of Flight
 isLive: true
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-principles'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/principles-of-flight'
 date: '2025-01-06'
 ---

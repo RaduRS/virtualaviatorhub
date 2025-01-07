@@ -5,9 +5,11 @@ chapter: 4.3 VFR vs. IFR Communication
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-vfr-ifr'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/vfr-ifr-communication'
 date: '2025-01-06'
 ---

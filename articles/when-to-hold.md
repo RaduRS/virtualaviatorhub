@@ -5,9 +5,11 @@ chapter: 6.2 Holding Patterns
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-when-to-hold'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/when-to-hold'
 date: '2025-01-06'
 ---

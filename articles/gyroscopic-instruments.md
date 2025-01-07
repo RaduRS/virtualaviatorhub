@@ -5,7 +5,8 @@ chapter: 3.2 Aircraft Instruments
 isLive: true
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-gyroscopic'
 date: '2025-01-06'
 ---

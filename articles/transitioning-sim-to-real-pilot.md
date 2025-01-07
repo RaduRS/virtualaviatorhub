@@ -5,9 +5,11 @@ chapter: 15.2 Exploring Real-World Aviation Careers
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-sim-to-real-pilot'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/sim-to-real-pilot'
 date: '2025-01-06'
 ---

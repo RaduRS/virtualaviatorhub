@@ -5,9 +5,11 @@ chapter: 13.1 Real-World Procedures in Sim
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-atc-communications'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/atc-communications'
 date: '2025-01-06'
 ---

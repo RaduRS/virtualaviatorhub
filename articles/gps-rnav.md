@@ -5,9 +5,11 @@ chapter: 8.1 GPS and RNAV
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-gps-rnav'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/gps-rnav'
 date: '2025-01-06'
 ---

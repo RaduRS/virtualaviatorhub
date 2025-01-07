@@ -5,7 +5,8 @@ chapter: 2.4 Understanding Charts
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/vfr-sectional-charts'
 date: '2025-01-06'
 ---

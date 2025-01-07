@@ -11,7 +11,7 @@ html {
 }
 
 .article > h1 {
-  @apply font-cormorantGaramond text-4xl text-center tracking-tight;
+  @apply font-cormorantGaramond text-4xl text-center tracking-tight font-bold;
 }
 
 .article > h2 {
@@ -35,22 +35,25 @@ html {
 }
 
 .article > p > img {
-  @apply w-1/2 mx-auto;
+  @apply w-2/3 mx-auto;
 }
 
-.article > a {
-  @apply text-blue-500 font-semibold underline decoration-2 decoration-blue-300 hover:decoration-blue-500 hover:text-blue-700 transition duration-200 ease-in-out;
+.article > a,
+.article ul li > a {
+  @apply text-blue-500 font-semibold decoration-2 decoration-blue-300 hover:decoration-blue-500 hover:text-blue-700 transition duration-200 ease-in-out;
 }
 
 /* Visited links */
-.article > a:visited {
+/* .article > a:visited,
+.article ul li > a:visited {
   @apply text-purple-500 decoration-purple-300;
-}
+} */
 
 /* Link hover effect */
-.article > a:hover {
-  @apply scale-105 shadow-md;
-}
+/* .article > a:hover,
+.article ul li > a:hover {
+  @apply scale-105;
+} */
 
 /* Links in headings (h3) */
 .article > h3 > a {

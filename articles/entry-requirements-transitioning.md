@@ -5,9 +5,11 @@ chapter: 11.1 Entry Requirements and Transitioning
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-entry-requirements'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/entry-requirements'
 date: '2025-01-06'
 ---

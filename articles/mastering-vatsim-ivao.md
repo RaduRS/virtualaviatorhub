@@ -5,9 +5,11 @@ chapter: 14.3 Advanced ATC Systems
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-vatsim-ivao'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/vatsim-ivao'
 date: '2025-01-06'
 ---

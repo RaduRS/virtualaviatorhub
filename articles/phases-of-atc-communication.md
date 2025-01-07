@@ -5,9 +5,11 @@ chapter: 4.1 Phases of ATC Communication
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-atc-phases'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/atc-phases'
 date: '2025-01-06'
 ---

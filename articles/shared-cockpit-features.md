@@ -5,9 +5,11 @@ chapter: 14.2 Multi-Crew Coordination
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-shared-cockpit'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/shared-cockpit'
 date: '2025-01-06'
 ---

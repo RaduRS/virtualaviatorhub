@@ -5,9 +5,11 @@ chapter: '9.2 Airliners (Boeing, Airbus)'
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-vnav-lnav'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/vnav-lnav'
 date: '2025-01-06'
 ---

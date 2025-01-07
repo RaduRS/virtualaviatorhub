@@ -5,7 +5,8 @@ chapter: 3.1 Principles of Flight
 isLive: true
 image: /placeholder.jpeg
 resources:
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/lift-weight-thrust-drag'
 date: '2025-01-06'
 ---

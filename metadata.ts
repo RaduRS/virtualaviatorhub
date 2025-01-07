@@ -53,21 +53,26 @@ export const articlesMetadata: Record<
     ],
   },
   "types-of-aviation": {
-    title: "Types of Aviation (General, Commercial, Military)",
+    title: "Types of Aviation",
     chapter: "1.1 What is Aviation?",
     mainChapter: "Introduction to Aviation",
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
       {
-        title: "The Evolution of Aviation Technology",
+        title: "What is General aviation (GA) ?",
         type: "video",
-        url: "https://www.youtube.com/watch?v=example",
+        url: "https://www.youtube.com/watch?v=i9sGT4ctpE4",
       },
       {
-        title: "The Evolution of Aviation Technology",
+        title: "Types of Aviation; All you need to know about!",
         type: "article",
-        url: "https://www.example.com/aviation",
+        url: "https://an.aero/types-of-aviation-all-you-need-to-know-about/",
+      },
+      {
+        title: "Sectors of Aviation",
+        type: "article",
+        url: "https://www.naa.edu/sectors-of-aviation/",
       },
     ],
   },

@@ -5,9 +5,11 @@ chapter: 13.2 Joining Virtual Airlines
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-tracking-hours'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/tracking-hours'
 date: '2025-01-06'
 ---

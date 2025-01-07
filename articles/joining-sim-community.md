@@ -5,9 +5,11 @@ chapter: 16.1 Joining the Sim Community
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-sim-community'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/sim-community'
 date: '2025-01-06'
 ---

@@ -5,9 +5,11 @@ chapter: 5.2 IFR Navigation
 isLive: false
 image: /placeholder.jpeg
 resources:
-  - type: video
+  - title: The Evolution of Aviation Technology
+    type: video
     url: 'https://www.youtube.com/watch?v=example-alternate-airports'
-  - type: article
+  - title: The Evolution of Aviation Technology
+    type: article
     url: 'https://www.example.com/alternate-airports'
 date: '2025-01-06'
 ---
