@@ -1,36 +1,48 @@
-import { Cormorant_Garamond, Poppins } from "next/font/google";
-import "./globals.css";
+"use client";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
-// import { Check } from "lucide-react";
 import { CheckboxProvider } from "@/context/CheckboxContext";
-
-const cormorantGaramond = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-cormorant-garamond",
-  weight: ["400", "500", "600"],
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["400", "500", "600"],
-});
+import "./globals.css";
+import { useEffect, useState } from "react";
+import Footer from "@/components/Footer";
 
 export default function LayoutWithSidebar({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [showTopStrip, setShowTopStrip] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowTopStrip(true);
+      } else {
+        setShowTopStrip(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <SidebarProvider>
       <CheckboxProvider>
         <AppSidebar />
-        <main
-          className={`${cormorantGaramond.variable} ${poppins.variable} bg-neutral-100 antialiased font-poppins w-full`}
-        >
-          <SidebarTrigger />
+        <main className="bg-neutral-100 antialiased w-full min-h-screen flex flex-col justify-between">
+          <div
+            className={`fixed z-50 w-full transition-all duration-300 ${
+              showTopStrip ? "shadow-lg bg-neutral-100" : ""
+            }`}
+          >
+            <SidebarTrigger />
+          </div>
           {children}
+          <Footer />
         </main>
       </CheckboxProvider>
     </SidebarProvider>

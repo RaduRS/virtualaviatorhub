@@ -7,7 +7,7 @@ html {
 }
 
 .article {
-  @apply flex flex-col gap-3 font-poppins text-lg tracking-wide;
+  @apply flex flex-col gap-8 font-manrope tracking-wide;
 }
 
 .article > h1 {
@@ -54,7 +54,7 @@ html {
 
 /* Links in headings (h3) */
 .article > h3 > a {
-  @apply text-xl font-bold text-blue-600 hover:text-blue-800 underline transition duration-300 ease-in-out;
+  @apply text-xl font-bold text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out;
 }
 @layer base {
   :root {

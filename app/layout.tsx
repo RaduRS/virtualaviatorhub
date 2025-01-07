@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Poppins } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import LayoutWithSidebar from "./LayoutWithSidebar";
 
@@ -9,9 +9,9 @@ const cormorantGaramond = Cormorant_Garamond({
   weight: ["400", "500", "600"],
 });
 
-const poppins = Poppins({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-manrope",
   weight: ["400", "500", "600"],
 });
 
@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantGaramond.variable} ${poppins.variable} bg-neutral-100 antialiased`}
+        className={`${cormorantGaramond.variable} ${manrope.variable} bg-neutral-100 antialiased`}
       >
         <LayoutWithSidebar>{children}</LayoutWithSidebar>
       </body>

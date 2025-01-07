@@ -39,7 +39,7 @@ const Article = async ({ params }: { params: { slug: string } }) => {
       <div className="grid grid-cols-1 lg:grid-cols-[auto_20%] gap-8">
         {/* Main article */}
         <article
-          className="article bg-white p-6 rounded-lg shadow-md overflow-y-auto"
+          className="article bg-white !leading-[32px] py-6 px-6 md:px-12 text-base md:text-lg rounded-lg shadow-md overflow-y-auto"
           dangerouslySetInnerHTML={{ __html: articleData.contentHtml }}
         />
 
@@ -59,14 +59,18 @@ const Article = async ({ params }: { params: { slug: string } }) => {
                     <BookOpenIcon className="h-4 w-4 text-green-500" />
                   )}
                   {/* Link */}
-                  <a
+                  <Link
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-blue-600 font-medium text-sm underline"
                   >
-                    {resource.type === "video" ? "Watch Video" : "Read Article"}
-                  </a>
+                    {resource.title
+                      ? resource.title
+                      : resource.type === "video"
+                      ? "Watch Video"
+                      : "Read Article"}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -8,7 +8,8 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { sanitizeAndTruncateContent } from "@/lib/articles";
+import { sanitizeAndTruncateContent } from "@/lib/helpers";
+
 import Link from "next/link";
 
 interface ArticleCardProps {
@@ -26,7 +27,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   url,
   content,
 }) => {
-  const truncatedContent = sanitizeAndTruncateContent(content, title, 100);
+  const truncatedContent = sanitizeAndTruncateContent(content, title, 150);
 
   return (
     <Link href={url} className="no-underline">

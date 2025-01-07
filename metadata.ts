@@ -11,8 +11,16 @@ export const articlesMetadata: Record<
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "article", url: "https://www.example.com/aviation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
     ],
   },
   "history-of-aviation": {
@@ -22,10 +30,26 @@ export const articlesMetadata: Record<
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "article", url: "https://www.example.com/aviation" },
-      { type: "article", url: "https://www.example.com/aviation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
     ],
   },
   "types-of-aviation": {
@@ -35,8 +59,16 @@ export const articlesMetadata: Record<
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "article", url: "https://www.example.com/aviation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
     ],
   },
   "flight-simulation-basics": {
@@ -46,8 +78,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "article", url: "https://www.example.com/aviation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
     ],
   },
   "overview-of-flight-simulators": {
@@ -57,8 +97,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "article", url: "https://www.example.com/aviation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
     ],
   },
   "benefits-of-simulation": {
@@ -68,8 +116,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "article", url: "https://www.example.com/aviation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
     ],
   },
   "choosing-your-first-simulator": {
@@ -79,9 +135,21 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "video", url: "https://www.youtube.com/watch?v=example" },
-      { type: "article", url: "https://www.example.com/aviation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation",
+      },
     ],
   },
 
@@ -93,10 +161,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-airspace",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/understanding-airspace",
       },
@@ -109,8 +179,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-classes" },
-      { type: "article", url: "https://www.example.com/classes-of-airspace" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-classes",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/classes-of-airspace",
+      },
     ],
   },
   "controlled-vs-uncontrolled": {
@@ -120,7 +198,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/controlled-airspace" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/controlled-airspace",
+      },
     ],
   },
   "special-use-airspace": {
@@ -130,7 +212,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-special" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-special",
+      },
     ],
   },
   "basic-aircraft-anatomy": {
@@ -140,8 +226,13 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-anatomy" },
       {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-anatomy",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/basic-aircraft-anatomy",
       },
@@ -154,7 +245,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/parts-of-an-aircraft" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/parts-of-an-aircraft",
+      },
     ],
   },
   "control-surfaces": {
@@ -165,6 +260,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-control-surfaces",
       },
@@ -178,6 +274,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-landing-gear",
       },
@@ -190,7 +287,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/basic-aviation-terms" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/basic-aviation-terms",
+      },
     ],
   },
   "common-aviation-terms": {
@@ -200,7 +301,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/common-aviation-terms" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/common-aviation-terms",
+      },
     ],
   },
   "phonetic-alphabet": {
@@ -211,6 +316,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-phonetic-alphabet",
       },
@@ -224,6 +330,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-call-signs",
       },
@@ -237,6 +344,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-understanding-charts",
       },
@@ -249,7 +357,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/vfr-sectional-charts" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vfr-sectional-charts",
+      },
     ],
   },
   "terminal-area-charts": {
@@ -260,6 +372,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-terminal-charts",
       },
@@ -272,7 +385,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/legend-and-symbols" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/legend-and-symbols",
+      },
     ],
   },
   "airport-basics": {
@@ -283,10 +400,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-airport-basics",
       },
-      { type: "article", url: "https://www.example.com/airport-basics" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/airport-basics",
+      },
     ],
   },
   "airport-layouts": {
@@ -296,7 +418,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/airport-layouts" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/airport-layouts",
+      },
     ],
   },
   "reading-airport-diagrams": {
@@ -307,6 +433,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-reading-diagrams",
       },
@@ -319,7 +446,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/atis-and-notams" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/atis-and-notams",
+      },
     ],
   },
   "principles-of-flight": {
@@ -330,10 +461,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-principles",
       },
-      { type: "article", url: "https://www.example.com/principles-of-flight" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/principles-of-flight",
+      },
     ],
   },
   "lift-weight-thrust-drag": {
@@ -344,6 +480,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/lift-weight-thrust-drag",
       },
@@ -357,6 +494,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-bernoulli",
       },
@@ -369,7 +507,11 @@ export const articlesMetadata: Record<
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/stability-and-control" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/stability-and-control",
+      },
     ],
   },
   "basic-maneuvers": {
@@ -380,6 +522,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-basic-maneuvers",
       },
@@ -392,7 +535,11 @@ export const articlesMetadata: Record<
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/aircraft-instruments" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aircraft-instruments",
+      },
     ],
   },
   "the-6-pack": {
@@ -403,7 +550,11 @@ export const articlesMetadata: Record<
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-6-pack" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-6-pack",
+      },
     ],
   },
   "pitot-static-systems": {
@@ -413,7 +564,11 @@ export const articlesMetadata: Record<
     isLive: true,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/pitot-static-systems" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/pitot-static-systems",
+      },
     ],
   },
   "gyroscopic-instruments": {
@@ -424,6 +579,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-gyroscopic",
       },
@@ -436,7 +592,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/basic-navigation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/basic-navigation",
+      },
     ],
   },
   "latitude-and-longitude": {
@@ -447,6 +607,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-latitude-longitude",
       },
@@ -459,7 +620,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/reading-a-compass" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/reading-a-compass",
+      },
     ],
   },
   "plotting-a-course": {
@@ -470,6 +635,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-plotting-course",
       },
@@ -482,7 +648,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/weather-basics" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/weather-basics",
+      },
     ],
   },
   "understanding-metars-tafs": {
@@ -493,6 +663,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-metars-tafs",
       },
@@ -505,7 +676,11 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "article", url: "https://www.example.com/effects-of-weather" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/effects-of-weather",
+      },
     ],
   },
   "avoiding-thunderstorms": {
@@ -516,6 +691,7 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-thunderstorms",
       },
@@ -529,10 +705,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-atc-phases",
       },
-      { type: "article", url: "https://www.example.com/atc-phases" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/atc-phases",
+      },
     ],
   },
   "phraseology-best-practices": {
@@ -543,10 +724,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-phraseology",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/phraseology-best-practices",
       },
@@ -559,8 +742,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-vfr-ifr" },
-      { type: "article", url: "https://www.example.com/vfr-ifr-communication" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-vfr-ifr",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vfr-ifr-communication",
+      },
     ],
   },
   "flight-following-clearance-delivery": {
@@ -571,10 +762,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-clearance",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/flight-following-clearance",
       },
@@ -588,10 +781,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-vfr-navigation",
       },
-      { type: "article", url: "https://www.example.com/vfr-navigation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vfr-navigation",
+      },
     ],
   },
   "dead-reckoning": {
@@ -602,10 +800,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-dead-reckoning",
       },
-      { type: "article", url: "https://www.example.com/dead-reckoning" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/dead-reckoning",
+      },
     ],
   },
   pilotage: {
@@ -616,10 +819,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-pilotage",
       },
-      { type: "article", url: "https://www.example.com/pilotage" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/pilotage",
+      },
     ],
   },
   "flight-following": {
@@ -630,10 +838,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-flight-following",
       },
-      { type: "article", url: "https://www.example.com/flight-following" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/flight-following",
+      },
     ],
   },
   "ifr-navigation": {
@@ -644,10 +857,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-ifr-navigation",
       },
-      { type: "article", url: "https://www.example.com/ifr-navigation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/ifr-navigation",
+      },
     ],
   },
   "ifr-charts-and-plates": {
@@ -658,10 +876,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-ifr-charts",
       },
-      { type: "article", url: "https://www.example.com/ifr-charts" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/ifr-charts",
+      },
     ],
   },
   "alternate-airports": {
@@ -672,10 +895,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-alternate-airports",
       },
-      { type: "article", url: "https://www.example.com/alternate-airports" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/alternate-airports",
+      },
     ],
   },
   "airway-navigation": {
@@ -686,10 +914,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-airway-navigation",
       },
-      { type: "article", url: "https://www.example.com/airway-navigation" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/airway-navigation",
+      },
     ],
   },
   "instrument-approaches": {
@@ -700,10 +933,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-instrument-approaches",
       },
-      { type: "article", url: "https://www.example.com/instrument-approaches" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/instrument-approaches",
+      },
     ],
   },
   "precision-approaches": {
@@ -714,10 +952,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-precision-approaches",
       },
-      { type: "article", url: "https://www.example.com/precision-approaches" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/precision-approaches",
+      },
     ],
   },
 
@@ -728,8 +971,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-npa" },
-      { type: "article", url: "https://www.example.com/npa" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-npa",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/npa",
+      },
     ],
   },
   apv: {
@@ -739,8 +990,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-apv" },
-      { type: "article", url: "https://www.example.com/apv" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-apv",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/apv",
+      },
     ],
   },
   "autopilot-systems": {
@@ -751,10 +1010,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-autopilot-systems",
       },
-      { type: "article", url: "https://www.example.com/autopilot-systems" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/autopilot-systems",
+      },
     ],
   },
   "basic-autopilot-modes": {
@@ -765,10 +1029,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-basic-autopilot",
       },
-      { type: "article", url: "https://www.example.com/basic-autopilot" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/basic-autopilot",
+      },
     ],
   },
   "advanced-autopilot-modes": {
@@ -779,10 +1048,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-advanced-autopilot",
       },
-      { type: "article", url: "https://www.example.com/advanced-autopilot" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/advanced-autopilot",
+      },
     ],
   },
   "autopilot-descent": {
@@ -793,10 +1067,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-autopilot-descent",
       },
-      { type: "article", url: "https://www.example.com/autopilot-descent" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/autopilot-descent",
+      },
     ],
   },
   "holding-patterns": {
@@ -807,10 +1086,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-holding-patterns",
       },
-      { type: "article", url: "https://www.example.com/holding-patterns" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/holding-patterns",
+      },
     ],
   },
   "entry-types": {
@@ -821,10 +1105,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-entry-types",
       },
-      { type: "article", url: "https://www.example.com/entry-types" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/entry-types",
+      },
     ],
   },
   "holding-calculations": {
@@ -835,10 +1124,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-holding-calculations",
       },
-      { type: "article", url: "https://www.example.com/holding-calculations" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/holding-calculations",
+      },
     ],
   },
   "when-to-hold": {
@@ -849,10 +1143,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-when-to-hold",
       },
-      { type: "article", url: "https://www.example.com/when-to-hold" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/when-to-hold",
+      },
     ],
   },
   "emergency-procedures": {
@@ -863,10 +1162,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-emergency-procedures",
       },
-      { type: "article", url: "https://www.example.com/emergency-procedures" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/emergency-procedures",
+      },
     ],
   },
   "engine-failures": {
@@ -877,10 +1181,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-engine-failures",
       },
-      { type: "article", url: "https://www.example.com/engine-failures" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/engine-failures",
+      },
     ],
   },
   "declaring-mayday": {
@@ -890,8 +1199,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-mayday" },
-      { type: "article", url: "https://www.example.com/mayday" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-mayday",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/mayday",
+      },
     ],
   },
   "alternate-diversion": {
@@ -902,10 +1219,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-diversion",
       },
-      { type: "article", url: "https://www.example.com/diversion" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/diversion",
+      },
     ],
   },
   "engine-basics": {
@@ -916,10 +1238,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-engine-basics",
       },
-      { type: "article", url: "https://www.example.com/engine-basics" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/engine-basics",
+      },
     ],
   },
   "types-of-engines": {
@@ -930,10 +1257,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-engine-types",
       },
-      { type: "article", url: "https://www.example.com/engine-types" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/engine-types",
+      },
     ],
   },
   "fuel-mixture-carburetor": {
@@ -944,10 +1276,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-carburetor-heat",
       },
-      { type: "article", url: "https://www.example.com/carburetor-heat" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/carburetor-heat",
+      },
     ],
   },
   "propeller-systems": {
@@ -958,10 +1295,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-propeller-systems",
       },
-      { type: "article", url: "https://www.example.com/propeller-systems" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/propeller-systems",
+      },
     ],
   },
   "electrical-systems": {
@@ -972,10 +1314,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-electrical-systems",
       },
-      { type: "article", url: "https://www.example.com/electrical-systems" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/electrical-systems",
+      },
     ],
   },
   "batteries-alternators": {
@@ -986,10 +1333,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-batteries-alternators",
       },
-      { type: "article", url: "https://www.example.com/batteries-alternators" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/batteries-alternators",
+      },
     ],
   },
   "circuit-breakers": {
@@ -1000,10 +1352,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-circuit-breakers",
       },
-      { type: "article", url: "https://www.example.com/circuit-breakers" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/circuit-breakers",
+      },
     ],
   },
   "essential-buses": {
@@ -1014,10 +1371,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-essential-buses",
       },
-      { type: "article", url: "https://www.example.com/essential-buses" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/essential-buses",
+      },
     ],
   },
   "flight-control-systems": {
@@ -1028,10 +1390,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-flight-control",
       },
-      { type: "article", url: "https://www.example.com/flight-control" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/flight-control",
+      },
     ],
   },
   "control-types": {
@@ -1042,10 +1409,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-control-types",
       },
-      { type: "article", url: "https://www.example.com/control-types" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/control-types",
+      },
     ],
   },
   "trim-stabilizers": {
@@ -1056,10 +1428,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-trim-stabilizers",
       },
-      { type: "article", url: "https://www.example.com/trim-stabilizers" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/trim-stabilizers",
+      },
     ],
   },
   "fuel-systems": {
@@ -1070,10 +1447,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-fuel-systems",
       },
-      { type: "article", url: "https://www.example.com/fuel-systems" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/fuel-systems",
+      },
     ],
   },
   "gravity-vs-pump": {
@@ -1084,10 +1466,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-gravity-pump",
       },
-      { type: "article", url: "https://www.example.com/gravity-pump" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/gravity-pump",
+      },
     ],
   },
   "fuel-management": {
@@ -1098,10 +1485,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-fuel-management",
       },
-      { type: "article", url: "https://www.example.com/fuel-management" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/fuel-management",
+      },
     ],
   },
   "fuel-indicators": {
@@ -1112,10 +1504,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-fuel-indicators",
       },
-      { type: "article", url: "https://www.example.com/fuel-indicators" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/fuel-indicators",
+      },
     ],
   },
   "pressurization-systems": {
@@ -1126,10 +1523,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-pressurization-systems",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/pressurization-systems",
       },
@@ -1143,10 +1542,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-cabin-pressure",
       },
-      { type: "article", url: "https://www.example.com/cabin-pressure" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/cabin-pressure",
+      },
     ],
   },
   "hypoxia-emergency": {
@@ -1156,8 +1560,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-hypoxia" },
-      { type: "article", url: "https://www.example.com/hypoxia" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-hypoxia",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/hypoxia",
+      },
     ],
   },
   "gps-rnav": {
@@ -1168,10 +1580,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-gps-rnav",
       },
-      { type: "article", url: "https://www.example.com/gps-rnav" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/gps-rnav",
+      },
     ],
   },
   "waas-rnp": {
@@ -1182,10 +1599,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-waas-rnp",
       },
-      { type: "article", url: "https://www.example.com/waas-rnp" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/waas-rnp",
+      },
     ],
   },
   "gps-errors": {
@@ -1196,10 +1618,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-gps-errors",
       },
-      { type: "article", url: "https://www.example.com/gps-errors" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/gps-errors",
+      },
     ],
   },
   "flying-rnav": {
@@ -1210,10 +1637,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-flying-rnav",
       },
-      { type: "article", url: "https://www.example.com/flying-rnav" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/flying-rnav",
+      },
     ],
   },
   "flight-planning": {
@@ -1224,10 +1656,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-flight-planning",
       },
-      { type: "article", url: "https://www.example.com/flight-planning" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/flight-planning",
+      },
     ],
   },
   "using-simbrief": {
@@ -1238,10 +1675,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-using-simbrief",
       },
-      { type: "article", url: "https://www.example.com/using-simbrief" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/using-simbrief",
+      },
     ],
   },
   "weight-balance": {
@@ -1252,10 +1694,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-weight-balance",
       },
-      { type: "article", url: "https://www.example.com/weight-balance" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/weight-balance",
+      },
     ],
   },
   "fuel-planning": {
@@ -1266,10 +1713,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-fuel-planning",
       },
-      { type: "article", url: "https://www.example.com/fuel-planning" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/fuel-planning",
+      },
     ],
   },
   "sim-navigation-tools": {
@@ -1280,10 +1732,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-sim-navigation-tools",
       },
-      { type: "article", url: "https://www.example.com/sim-navigation-tools" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/sim-navigation-tools",
+      },
     ],
   },
   "navigraph-charts": {
@@ -1294,10 +1751,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-navigraph-charts",
       },
-      { type: "article", url: "https://www.example.com/navigraph-charts" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/navigraph-charts",
+      },
     ],
   },
   "integrating-simbrief": {
@@ -1308,10 +1770,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-integrating-simbrief",
       },
-      { type: "article", url: "https://www.example.com/integrating-simbrief" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/integrating-simbrief",
+      },
     ],
   },
   "cessna-172": {
@@ -1322,10 +1789,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-cessna-172",
       },
-      { type: "article", url: "https://www.example.com/cessna-172" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/cessna-172",
+      },
     ],
   },
   "startup-shutdown-procedures": {
@@ -1336,10 +1808,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-startup-shutdown",
       },
-      { type: "article", url: "https://www.example.com/startup-shutdown" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/startup-shutdown",
+      },
     ],
   },
   "navigation-tips-vfr": {
@@ -1350,10 +1827,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-navigation-vfr",
       },
-      { type: "article", url: "https://www.example.com/navigation-vfr" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/navigation-vfr",
+      },
     ],
   },
   "landing-techniques": {
@@ -1364,10 +1846,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-landing-techniques",
       },
-      { type: "article", url: "https://www.example.com/landing-techniques" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/landing-techniques",
+      },
     ],
   },
   airliners: {
@@ -1378,10 +1865,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-airliners",
       },
-      { type: "article", url: "https://www.example.com/airliners" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/airliners",
+      },
     ],
   },
   "fmc-mcdu-programming": {
@@ -1392,10 +1884,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-fmc-mcdu",
       },
-      { type: "article", url: "https://www.example.com/fmc-mcdu" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/fmc-mcdu",
+      },
     ],
   },
   "vnav-lnav-usage": {
@@ -1406,10 +1903,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-vnav-lnav",
       },
-      { type: "article", url: "https://www.example.com/vnav-lnav" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vnav-lnav",
+      },
     ],
   },
   "autoland-procedures": {
@@ -1420,10 +1922,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-autoland",
       },
-      { type: "article", url: "https://www.example.com/autoland" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/autoland",
+      },
     ],
   },
   helicopters: {
@@ -1434,10 +1941,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-helicopters",
       },
-      { type: "article", url: "https://www.example.com/helicopters" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/helicopters",
+      },
     ],
   },
   "hovering-techniques": {
@@ -1448,10 +1960,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-hovering-techniques",
       },
-      { type: "article", url: "https://www.example.com/hovering-techniques" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/hovering-techniques",
+      },
     ],
   },
   autorotations: {
@@ -1462,10 +1979,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-autorotations",
       },
-      { type: "article", url: "https://www.example.com/autorotations" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/autorotations",
+      },
     ],
   },
   "understanding-collective-cyclic": {
@@ -1476,10 +1998,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-collective-cyclic",
       },
-      { type: "article", url: "https://www.example.com/collective-cyclic" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/collective-cyclic",
+      },
     ],
   },
   "advanced-weather": {
@@ -1490,10 +2017,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-advanced-weather",
       },
-      { type: "article", url: "https://www.example.com/advanced-weather" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/advanced-weather",
+      },
     ],
   },
   "flying-in-imc": {
@@ -1503,8 +2035,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-imc" },
-      { type: "article", url: "https://www.example.com/imc" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-imc",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/imc",
+      },
     ],
   },
   "turbulence-wind-shear": {
@@ -1515,10 +2055,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-turbulence",
       },
-      { type: "article", url: "https://www.example.com/turbulence" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/turbulence",
+      },
     ],
   },
   "understanding-icing": {
@@ -1528,8 +2073,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-icing" },
-      { type: "article", url: "https://www.example.com/icing" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-icing",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/icing",
+      },
     ],
   },
   "aerodynamics-maneuvering": {
@@ -1540,10 +2093,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-aerodynamics",
       },
-      { type: "article", url: "https://www.example.com/aerodynamics" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aerodynamics",
+      },
     ],
   },
   "turns-climbs-descents": {
@@ -1553,8 +2111,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-turns" },
-      { type: "article", url: "https://www.example.com/turns" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-turns",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/turns",
+      },
     ],
   },
   "load-factor-gforces": {
@@ -1565,10 +2131,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-load-factor",
       },
-      { type: "article", url: "https://www.example.com/load-factor" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/load-factor",
+      },
     ],
   },
   "wingtip-vortices": {
@@ -1579,10 +2150,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-vortices",
       },
-      { type: "article", url: "https://www.example.com/vortices" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vortices",
+      },
     ],
   },
 
@@ -1595,10 +2171,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-entry-requirements",
       },
-      { type: "article", url: "https://www.example.com/entry-requirements" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/entry-requirements",
+      },
     ],
   },
   "vfr-ifr-cruising-altitudes": {
@@ -1609,10 +2190,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-cruising-altitudes",
       },
-      { type: "article", url: "https://www.example.com/cruising-altitudes" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/cruising-altitudes",
+      },
     ],
   },
   "right-of-way-rules": {
@@ -1623,10 +2209,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-right-of-way",
       },
-      { type: "article", url: "https://www.example.com/right-of-way" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/right-of-way",
+      },
     ],
   },
   "far-aim-overview": {
@@ -1636,8 +2227,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-far-aim" },
-      { type: "article", url: "https://www.example.com/far-aim" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-far-aim",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/far-aim",
+      },
     ],
   },
   "simbrief-tutorials": {
@@ -1648,10 +2247,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-simbrief",
       },
-      { type: "article", url: "https://www.example.com/simbrief" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/simbrief",
+      },
     ],
   },
   "setting-up-flight-plan": {
@@ -1662,10 +2266,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-flight-plan",
       },
-      { type: "article", url: "https://www.example.com/flight-plan" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/flight-plan",
+      },
     ],
   },
   "importing-msfs-xplane": {
@@ -1676,10 +2285,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-importing",
       },
-      { type: "article", url: "https://www.example.com/importing" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/importing",
+      },
     ],
   },
   "customizing-aircraft-profiles": {
@@ -1690,10 +2304,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-customizing",
       },
-      { type: "article", url: "https://www.example.com/customizing" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/customizing",
+      },
     ],
   },
   "chart-reading": {
@@ -1703,8 +2322,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-charts" },
-      { type: "article", url: "https://www.example.com/charts" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-charts",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/charts",
+      },
     ],
   },
   "understanding-stars-sids": {
@@ -1715,10 +2342,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-stars-sids",
       },
-      { type: "article", url: "https://www.example.com/stars-sids" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/stars-sids",
+      },
     ],
   },
   "interpreting-approach-plates": {
@@ -1729,10 +2361,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-approach-plates",
       },
-      { type: "article", url: "https://www.example.com/approach-plates" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/approach-plates",
+      },
     ],
   },
   "runway-analysis": {
@@ -1742,8 +2379,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-runway" },
-      { type: "article", url: "https://www.example.com/runway" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-runway",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/runway",
+      },
     ],
   },
   "vr-sim-accessories": {
@@ -1753,8 +2398,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-vr" },
-      { type: "article", url: "https://www.example.com/vr-accessories" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-vr",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vr-accessories",
+      },
     ],
   },
   "vr-setup": {
@@ -1765,10 +2418,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-vr-setup",
       },
-      { type: "article", url: "https://www.example.com/vr-setup" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vr-setup",
+      },
     ],
   },
   "best-hotas-yokes": {
@@ -1779,10 +2437,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-hotas-yokes",
       },
-      { type: "article", url: "https://www.example.com/hotas-yokes" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/hotas-yokes",
+      },
     ],
   },
   "configuring-stream-deck": {
@@ -1793,10 +2456,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-stream-deck",
       },
-      { type: "article", url: "https://www.example.com/stream-deck" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/stream-deck",
+      },
     ],
   },
   "peripherals-setup": {
@@ -1807,10 +2475,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-peripherals",
       },
-      { type: "article", url: "https://www.example.com/peripherals" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/peripherals",
+      },
     ],
   },
   "choosing-hotas-yoke": {
@@ -1821,10 +2494,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-choosing-hotas",
       },
-      { type: "article", url: "https://www.example.com/choosing-hotas" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/choosing-hotas",
+      },
     ],
   },
   "configuring-rudder-pedals": {
@@ -1835,10 +2513,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-rudder-pedals",
       },
-      { type: "article", url: "https://www.example.com/rudder-pedals" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/rudder-pedals",
+      },
     ],
   },
   "fine-tuning-sensitivities": {
@@ -1849,10 +2532,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-sensitivities",
       },
-      { type: "article", url: "https://www.example.com/sensitivities" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/sensitivities",
+      },
     ],
   },
   "real-world-procedures-sim": {
@@ -1863,10 +2551,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-real-procedures",
       },
-      { type: "article", url: "https://www.example.com/real-world-procedures" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/real-world-procedures",
+      },
     ],
   },
   "flying-faa-regulations": {
@@ -1877,10 +2570,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-faa-regulations",
       },
-      { type: "article", url: "https://www.example.com/faa-regulations" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/faa-regulations",
+      },
     ],
   },
   "simulating-atc-communications": {
@@ -1891,10 +2589,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-atc-communications",
       },
-      { type: "article", url: "https://www.example.com/atc-communications" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/atc-communications",
+      },
     ],
   },
   "realistic-emergency-scenarios": {
@@ -1905,10 +2608,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-emergency-scenarios",
       },
-      { type: "article", url: "https://www.example.com/emergency-scenarios" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/emergency-scenarios",
+      },
     ],
   },
   "joining-virtual-airlines": {
@@ -1919,10 +2627,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-virtual-airlines",
       },
-      { type: "article", url: "https://www.example.com/virtual-airlines" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/virtual-airlines",
+      },
     ],
   },
   "va-membership-benefits": {
@@ -1933,10 +2646,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-va-membership",
       },
-      { type: "article", url: "https://www.example.com/va-membership" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/va-membership",
+      },
     ],
   },
   "setting-up-vatsim-flights": {
@@ -1946,8 +2664,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-vatsim" },
-      { type: "article", url: "https://www.example.com/vatsim-flights" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-vatsim",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vatsim-flights",
+      },
     ],
   },
   "tracking-hours-progression": {
@@ -1958,10 +2684,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-tracking-hours",
       },
-      { type: "article", url: "https://www.example.com/tracking-hours" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/tracking-hours",
+      },
     ],
   },
   "real-world-flight-planning": {
@@ -1972,10 +2703,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-flight-planning",
       },
-      { type: "article", url: "https://www.example.com/real-world-planning" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/real-world-planning",
+      },
     ],
   },
   "using-real-world-weather": {
@@ -1986,10 +2722,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-weather-data",
       },
-      { type: "article", url: "https://www.example.com/weather-data" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/weather-data",
+      },
     ],
   },
   "planning-routes-constraints": {
@@ -2000,10 +2741,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-routes-constraints",
       },
-      { type: "article", url: "https://www.example.com/routes-constraints" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/routes-constraints",
+      },
     ],
   },
   "long-haul-flights-procedures": {
@@ -2014,10 +2760,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-long-haul",
       },
-      { type: "article", url: "https://www.example.com/long-haul-flights" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/long-haul-flights",
+      },
     ],
   },
   "flying-with-failures": {
@@ -2028,10 +2779,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-failures",
       },
-      { type: "article", url: "https://www.example.com/flying-failures" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/flying-failures",
+      },
     ],
   },
   "random-failures": {
@@ -2042,10 +2798,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-random-failures",
       },
-      { type: "article", url: "https://www.example.com/random-failures" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/random-failures",
+      },
     ],
   },
   "managing-system-failures": {
@@ -2056,10 +2817,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-system-failures",
       },
-      { type: "article", url: "https://www.example.com/system-failures" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/system-failures",
+      },
     ],
   },
   "emergency-descents-landings": {
@@ -2070,10 +2836,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-emergency-descents",
       },
-      { type: "article", url: "https://www.example.com/emergency-landings" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/emergency-landings",
+      },
     ],
   },
   "multi-crew-coordination": {
@@ -2084,10 +2855,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-multi-crew",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/multi-crew-coordination",
       },
@@ -2101,10 +2874,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-pilot-command",
       },
-      { type: "article", url: "https://www.example.com/pilot-command-role" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/pilot-command-role",
+      },
     ],
   },
   "shared-cockpit-features": {
@@ -2115,10 +2893,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-shared-cockpit",
       },
-      { type: "article", url: "https://www.example.com/shared-cockpit" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/shared-cockpit",
+      },
     ],
   },
   "communicating-with-atc-team": {
@@ -2129,10 +2912,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-atc-team",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/atc-communication-team",
       },
@@ -2146,10 +2931,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-advanced-atc",
       },
-      { type: "article", url: "https://www.example.com/advanced-atc-systems" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/advanced-atc-systems",
+      },
     ],
   },
   "mastering-vatsim-ivao": {
@@ -2160,10 +2950,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-vatsim-ivao",
       },
-      { type: "article", url: "https://www.example.com/vatsim-ivao" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/vatsim-ivao",
+      },
     ],
   },
   "pilotedge-realistic-atc": {
@@ -2174,10 +2969,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-pilotedge",
       },
-      { type: "article", url: "https://www.example.com/pilotedge-atc" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/pilotedge-atc",
+      },
     ],
   },
   "handling-complex-airspace": {
@@ -2188,10 +2988,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-complex-airspace",
       },
-      { type: "article", url: "https://www.example.com/complex-airspace" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/complex-airspace",
+      },
     ],
   },
   "becoming-virtual-airline-pilot": {
@@ -2202,10 +3007,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-virtual-airline",
       },
-      { type: "article", url: "https://www.example.com/virtual-airline" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/virtual-airline",
+      },
     ],
   },
   "applying-to-virtual-airlines": {
@@ -2216,10 +3026,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-applying-airlines",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/applying-virtual-airlines",
       },
@@ -2233,10 +3045,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-checkrides",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/checkrides-evaluations",
       },
@@ -2250,10 +3064,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-seniority",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/seniority-virtual-airlines",
       },
@@ -2267,10 +3083,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-real-world-careers",
       },
-      { type: "article", url: "https://www.example.com/real-world-careers" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/real-world-careers",
+      },
     ],
   },
   "transitioning-sim-to-real-pilot": {
@@ -2281,10 +3102,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-sim-to-real-pilot",
       },
-      { type: "article", url: "https://www.example.com/sim-to-real-pilot" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/sim-to-real-pilot",
+      },
     ],
   },
   "careers-in-atc-maintenance": {
@@ -2295,10 +3121,12 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-careers-atc",
       },
       {
+        title: "The Evolution of Aviation Technology",
         type: "article",
         url: "https://www.example.com/careers-atc-maintenance",
       },
@@ -2312,10 +3140,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-aviation-management",
       },
-      { type: "article", url: "https://www.example.com/aviation-management" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/aviation-management",
+      },
     ],
   },
   "joining-sim-community": {
@@ -2326,10 +3159,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-sim-community",
       },
-      { type: "article", url: "https://www.example.com/sim-community" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/sim-community",
+      },
     ],
   },
   "popular-forums-discords": {
@@ -2340,10 +3178,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-forums-discords",
       },
-      { type: "article", url: "https://www.example.com/forums-discords" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/forums-discords",
+      },
     ],
   },
   "contributing-to-communities": {
@@ -2354,10 +3197,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-contribute-community",
       },
-      { type: "article", url: "https://www.example.com/contribute-community" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/contribute-community",
+      },
     ],
   },
   "attending-online-real-world-events": {
@@ -2367,8 +3215,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-events" },
-      { type: "article", url: "https://www.example.com/events" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-events",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/events",
+      },
     ],
   },
   "participating-in-fly-ins": {
@@ -2378,8 +3234,16 @@ export const articlesMetadata: Record<
     isLive: false,
     image: "/placeholder.jpeg",
     resources: [
-      { type: "video", url: "https://www.youtube.com/watch?v=example-fly-ins" },
-      { type: "article", url: "https://www.example.com/fly-ins" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=example-fly-ins",
+      },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/fly-ins",
+      },
     ],
   },
   "organizing-group-flights": {
@@ -2390,10 +3254,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-group-flights",
       },
-      { type: "article", url: "https://www.example.com/group-flights" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/group-flights",
+      },
     ],
   },
   "flying-large-scale-events": {
@@ -2404,10 +3273,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-large-scale-events",
       },
-      { type: "article", url: "https://www.example.com/large-scale-events" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/large-scale-events",
+      },
     ],
   },
   "sharing-experiences": {
@@ -2418,10 +3292,15 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
+        title: "The Evolution of Aviation Technology",
         type: "video",
         url: "https://www.youtube.com/watch?v=example-sharing-experiences",
       },
-      { type: "article", url: "https://www.example.com/sharing-experiences" },
+      {
+        title: "The Evolution of Aviation Technology",
+        type: "article",
+        url: "https://www.example.com/sharing-experiences",
+      },
     ],
   },
 };

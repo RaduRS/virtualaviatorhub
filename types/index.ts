@@ -1,5 +1,6 @@
 interface Resource {
   type: string;
+  title: string;
   url: string;
 }
 export type ArticleItem = {
