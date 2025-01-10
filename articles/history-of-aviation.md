@@ -28,6 +28,8 @@ Aviation has always captivated the human imagination. From ancient myths of flig
 
 Long before powered flight, humans dreamed of soaring through the skies like birds. Ancient civilizations, including the Greeks and Chinese, imagined flight through legends and experimental designs.
 
+![Kite In Sky](/kite.jpeg)
+
 - **Greek Mythology**: The tale of Icarus and Daedalus symbolizes humanity's yearning for the skies.
 - **Chinese Innovations**: As early as 400 BCE, the Chinese developed kites and primitive rockets, paving the way for early aerodynamic studies.
 
@@ -35,14 +37,20 @@ Long before powered flight, humans dreamed of soaring through the skies like bir
 
 The Renaissance sparked renewed interest in flight, with figures like Leonardo da Vinci designing detailed flying machines. However, the practical breakthrough came in the late 18th and early 19th centuries:
 
+![Hot-Air-Balloon](/hot-air-balloon.jpeg)
+
 - **Hot Air Balloons**: In 1783, the Montgolfier brothers launched the first manned hot air balloon, marking humanity’s first step into the sky.
 - **Gliders**: Pioneers like George Cayley in the early 1800s studied aerodynamics, building gliders capable of carrying humans.
 
 ### **The Wright Brothers and the Birth of Powered Flight**
 
+![Wright-Brothers](/wright-brothers.jpeg)
+
 The Wright brothers' historic flight on December 17, 1903, in Kitty Hawk, North Carolina, changed the world forever. Their powered aircraft, the Wright Flyer, achieved sustained, controlled flight, laying the foundation for modern aviation.
 
 ### **The Golden Age of Aviation**
+
+![Pan American](/pan-american.webp)
 
 Between the 1920s and 1930s, aviation flourished, becoming a symbol of progress and adventure:
 
@@ -51,6 +59,8 @@ Between the 1920s and 1930s, aviation flourished, becoming a symbol of progress 
 - **Technological Advancements**: Aircraft became faster, safer, and more efficient with advancements in materials and engineering.
 
 ### **Aviation in War and Peace**
+
+![Worl War II](/wwii.jpeg)
 
 World Wars I and II significantly shaped aviation:
 
@@ -67,6 +77,8 @@ World Wars I and II significantly shaped aviation:
 - **2020s**: Development of electric and hydrogen-powered aircraft.
 
 ### **Cultural Diversity in Aviation**
+
+![Modern Cockpit](/cockpit.jpeg)
 
 Pioneers from diverse backgrounds have played a significant role in aviation's history:
 

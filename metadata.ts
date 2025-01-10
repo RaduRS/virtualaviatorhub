@@ -12,14 +12,14 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
-        title: "The Evolution of Aviation Technology",
-        type: "video",
-        url: "https://www.youtube.com/watch?v=example",
+        title: "Aviation",
+        type: "article",
+        url: "https://www.britannica.com/technology/history-of-flight/Construction-of-the-sustaining-wings-the-problem-of-lift",
       },
       {
-        title: "The Evolution of Aviation Technology",
+        title: "What is aviation?",
         type: "article",
-        url: "https://www.example.com/aviation",
+        url: "https://www.ferrovial.com/en/resources/aviation/",
       },
     ],
   },
@@ -31,24 +31,24 @@ export const articlesMetadata: Record<
     image: "/placeholder.jpeg",
     resources: [
       {
-        title: "The Evolution of Aviation Technology",
+        title: "The History Of Flight | From The Wright Brothers To The Jet",
         type: "video",
-        url: "https://www.youtube.com/watch?v=example",
+        url: "https://www.youtube.com/watch?v=HMl_w7F4vOw",
       },
       {
-        title: "The Evolution of Aviation Technology",
+        title: "From Birds to Brothers - the Evolution of Flight",
         type: "video",
-        url: "https://www.youtube.com/watch?v=example",
+        url: "https://www.youtube.com/watch?v=AWUnvYwPODs",
       },
       {
-        title: "The Evolution of Aviation Technology",
+        title: "History of Flight",
         type: "article",
-        url: "https://www.example.com/aviation",
+        url: "https://www.britannica.com/technology/history-of-flight",
       },
       {
-        title: "The Evolution of Aviation Technology",
+        title: "History of Flight: Breakthroughs, Disasters and More",
         type: "article",
-        url: "https://www.example.com/aviation",
+        url: "https://www.history.com/news/history-flight-aviation-timeline",
       },
     ],
   },
